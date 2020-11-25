@@ -1,4 +1,4 @@
-package com.example.joyandfear;
+package ru.nsu.fit.joyandfear.ui;
 
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
@@ -22,11 +22,14 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 
+import ru.nsu.fit.joyandfear.R;
+import ru.nsu.fit.joyandfear.databinding.ActivityMapsBinding;
+
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-    Location currenLocation;
-    FusedLocationProviderClient fusedLocationProviderClient;
+    private Location currentLocation;
+    private FusedLocationProviderClient fusedLocationProviderClient;
     private static final int REQUEST_CODE = 101;
 
     @Override
@@ -51,9 +54,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             @Override
             public void onSuccess(Location location) {
                 if (location != null){
-                    currenLocation = location;
-                    Toast.makeText(getApplicationContext(), currenLocation.getLatitude() +
-                            "" + currenLocation.getLongitude(), Toast.LENGTH_SHORT).show();
+                    currentLocation = location;
+                    Toast.makeText(getApplicationContext(), currentLocation.getLatitude() +
+                            "" + currentLocation.getLongitude(), Toast.LENGTH_SHORT).show();
                     SupportMapFragment supportMapFragment = (SupportMapFragment)
                             getSupportFragmentManager().findFragmentById(R.id.map);
                     supportMapFragment.getMapAsync(MapsActivity.this);
@@ -65,7 +68,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        LatLng latLng = new LatLng(currenLocation.getLatitude(), currenLocation.getLongitude());
+        mMap = googleMap;
+        LatLng latLng = new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude());
         MarkerOptions markerOptions = new MarkerOptions().position(latLng).title("You are here!");
         googleMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
         googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 5));

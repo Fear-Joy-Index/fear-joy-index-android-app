@@ -1,4 +1,4 @@
-package com.example.joyandfear;
+package ru.nsu.fit.joyandfear;
 
 import org.junit.Test;
 

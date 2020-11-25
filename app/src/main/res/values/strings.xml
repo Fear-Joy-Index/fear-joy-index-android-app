@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">JoyAndFear</string>
     <string name="title_activity_maps">Map</string>
+    <string name="title_map">Map</string>
+    <string name="title_statistics">Statistics</string>
+    <string name="title_tests">Tests</string>
 </resources>

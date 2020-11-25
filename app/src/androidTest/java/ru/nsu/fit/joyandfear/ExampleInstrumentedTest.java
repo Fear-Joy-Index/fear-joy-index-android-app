@@ -1,4 +1,4 @@
-package com.example.joyandfear;
+package ru.nsu.fit.joyandfear;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.joyandfear", appContext.getPackageName());
+        assertEquals("ru.nsu.fit.joyandfear", appContext.getPackageName());
     }
 }
