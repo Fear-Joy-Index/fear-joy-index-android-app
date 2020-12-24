@@ -3,15 +3,18 @@ package ru.nsu.fit.joyandfear.ui.tests;
 public class QuestionItem {
 
     String question, answA, answB, answC, answD;
-    Integer score;
+    Integer scoreA, scoreB, scoreC, scoreD;
 
-    public QuestionItem(String question, String answA, String answB, String answC, String answD, Integer score) {
+    public QuestionItem(String question, String answA, String answB, String answC, String answD, Integer scoreA, Integer scoreB, Integer scoreC, Integer scoreD) {
         this.question = question;
         this.answA = answA;
         this.answB = answB;
         this.answC = answC;
         this.answD = answD;
-        this.score = score;
+        this.scoreA = scoreA;
+        this.scoreB = scoreB;
+        this.scoreC = scoreC;
+        this.scoreD = scoreD;
     }
 
     public String getQuestion() {
@@ -34,7 +37,19 @@ public class QuestionItem {
         return answD;
     }
 
-    public Integer getScore() {
-        return score;
+    public Integer getScoreA() {
+        return scoreA;
+    }
+
+    public Integer getScoreB() {
+        return scoreB;
+    }
+
+    public Integer getScoreC() {
+        return scoreC;
+    }
+
+    public Integer getScoreD() {
+        return scoreD;
     }
 }

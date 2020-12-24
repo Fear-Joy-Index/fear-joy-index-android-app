@@ -1,23 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.tests.TestsFragment">
 
-    <TextView
-        android:id="@+id/text_tests"
+    <GridLayout
+        android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:gravity="center_horizontal" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_margin="10dp"
+        android:rowCount="5"
+        android:columnCount="1"
+        >
+
+        <Button
+            android:id = "@+id/button_1"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_height="100sp"
+            android:layout_rowWeight="1"
+            android:textSize="18dp"
+            android:layout_margin="5sp"
+            android:text="Button"
+            />
+
+        <Button
+            android:id = "@+id/button_2"
+            android:layout_gravity="fill"
+            android:layout_height="100sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="18dp"
+            android:layout_margin="5sp"
+            android:text="Button"
+            />
+        <Button
+            android:id = "@+id/button_3"
+            android:layout_gravity="fill"
+            android:layout_height="100sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="18dp"
+            android:layout_margin="5sp"
+            android:text="Button"
+            />
+        <Button
+            android:id = "@+id/button_4"
+            android:layout_gravity="fill"
+            android:layout_height="100sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="18dp"
+            android:layout_margin="5sp"
+            android:text="Button"
+            />
+        <Button
+            android:id = "@+id/button_5"
+            android:layout_gravity="fill"
+            android:layout_height="100sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="18dp"
+            android:layout_margin="5sp"
+            android:text="Button"
+            />
+        <Button
+            android:id = "@+id/button_6"
+            android:layout_gravity="fill"
+            android:layout_height="100sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="18dp"
+            android:layout_margin="5sp"
+            android:text="Button"
+            />
+        <Button
+            android:id = "@+id/button_7"
+            android:layout_gravity="fill"
+            android:layout_height="100sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="18dp"
+            android:layout_margin="5sp"
+            android:text="Button"
+            />
+
+    </GridLayout>>
+</ScrollView>

@@ -1,4 +1,4 @@
-package ru.nsu.fit.joyandfear.ui.tests;
+package ru.nsu.fit.joyandfear;
 
 import android.app.AppComponentFactory;
 import android.os.Bundle;
