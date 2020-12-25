@@ -22,7 +22,7 @@
             android:layout_rowWeight="1"
             android:textSize="18dp"
             android:layout_margin="5sp"
-            android:text="Button"
+            android:text="Шкала Зунга"
             />
 
         <Button
@@ -33,18 +33,18 @@
             android:layout_rowWeight="1"
             android:textSize="18dp"
             android:layout_margin="5sp"
-            android:text="Button"
+            android:text="Шкала самооценки тревоги Спилбера-Ханина"
             />
+
         <Button
-            android:id = "@+id/button_3"
-            android:layout_gravity="fill"
+            android:id="@+id/button_3"
             android:layout_height="100sp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:textSize="18dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
             android:layout_margin="5sp"
-            android:text="Button"
-            />
+            android:text="Шкала депрессии Бека"
+            android:textSize="18sp" />
         <Button
             android:id = "@+id/button_4"
             android:layout_gravity="fill"
