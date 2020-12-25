@@ -32,7 +32,8 @@ public class ZungActivity extends AppCompatActivity {
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+        System.out.println("GOT IT");
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_4);
 
         question = findViewById(R.id.question_view);
@@ -41,12 +42,13 @@ public class ZungActivity extends AppCompatActivity {
         button_C = findViewById(R.id.button_C);
         button_D = findViewById(R.id.button_D);
 
+        loadAllQuestions();
         setQuestionScreen(currentQuestion);
 
         button_A.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                points = questionItems.get(currentQuestion).getScore() + points;
+                points = questionItems.get(currentQuestion).getScoreA() + points;
 
                 //load next question if any
                 if (currentQuestion < questionItems.size()-1){
@@ -63,7 +65,7 @@ public class ZungActivity extends AppCompatActivity {
         button_B.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                points = questionItems.get(currentQuestion).getScore() + points;
+                points = questionItems.get(currentQuestion).getScoreB() + points;
                 //load next question if any
                 if (currentQuestion < questionItems.size()-1){
                     currentQuestion++;
@@ -79,7 +81,7 @@ public class ZungActivity extends AppCompatActivity {
         button_C.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                points = questionItems.get(currentQuestion).getScore() + points;
+                points = questionItems.get(currentQuestion).getScoreC() + points;
 
                 //load next question if any
                 if (currentQuestion < questionItems.size()-1){
@@ -96,7 +98,7 @@ public class ZungActivity extends AppCompatActivity {
         button_D.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                points = questionItems.get(currentQuestion).getScore() + points;
+                points = questionItems.get(currentQuestion).getScoreD() + points;
 
                 //load next question if any
                 if (currentQuestion < questionItems.size()-1){
@@ -130,16 +132,35 @@ public class ZungActivity extends AppCompatActivity {
         try{
             JSONObject jsonObj = new JSONObject(jsonStr);
             JSONArray questions = jsonObj.getJSONArray("questions");
+            JSONArray answersA = jsonObj.getJSONArray("A");
+            JSONArray answersB = jsonObj.getJSONArray("C");
+            JSONArray answersC = jsonObj.getJSONArray("B");
+            JSONArray answersD = jsonObj.getJSONArray("D");
             for (int i = 0; i < questions.length(); i++){
+                String answerAString, answerBString, answerCString, answerDString;
+                Integer scoreAString, scoreBString, scoreCString, scoreDString;
+
                 JSONObject question = questions.getJSONObject(i);
+                JSONObject ansA, ansB, ansC, ansD;
+                ansA = question.getJSONObject("A");
+                ansB = question.getJSONObject("B");
+                ansC = question.getJSONObject("C");
+                ansD = question.getJSONObject("D");
+
 
                 String questionString = question.getString("question");
                 //???????????????????????????????????????????????????????????????
-                String answerAString = question.getString("answer.A");
-                String answerBString = question.getString("answer.B");
-                String answerCString = question.getString("answer.C");
-                String answerDString = question.getString("answer.D");
-                Integer scoreString = question.getInt("answer.score");
+                answerAString = ansA.getString("answer");
+                scoreAString = ansA.getInt("score");
+
+                answerBString = ansB.getString("answer");
+                scoreBString = ansB.getInt("score");
+
+                answerCString = ansC.getString("answer");
+                scoreCString = ansC.getInt("score");
+
+                answerDString = ansD.getString("answer");
+                scoreDString = ansD.getInt("score");
 
                 questionItems.add(new QuestionItem(
                         questionString,
@@ -147,7 +168,10 @@ public class ZungActivity extends AppCompatActivity {
                         answerBString,
                         answerCString,
                         answerDString,
-                        scoreString
+                        scoreAString,
+                        scoreBString,
+                        scoreCString,
+                        scoreDString
                 ));
             }
         } catch (JSONException e){
