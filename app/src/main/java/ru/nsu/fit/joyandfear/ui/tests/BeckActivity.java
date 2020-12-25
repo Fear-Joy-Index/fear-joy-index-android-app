@@ -21,7 +21,7 @@ import java.util.List;
 
 import ru.nsu.fit.joyandfear.R;
 
-public class ZungActivity extends AppCompatActivity {
+public class BeckActivity extends AppCompatActivity {
 
     TextView question, count;
     Button button_A, button_B, button_C, button_D;
@@ -60,16 +60,16 @@ public class ZungActivity extends AppCompatActivity {
                 } else {
                     Intent intent = new Intent(getApplicationContext(), EndActivity.class);
 
-                    if ((points >= 20) && (points <= 49))
-                        intent.putExtra("result", "Нормальное состояние");
+                    if ((points >= 0) && (points <= 9))
+                        intent.putExtra("result", "У вас отсутствуют депрессивные симптомы");
                     else
-                        if ((points >= 50) && (points <= 59))
-                            intent.putExtra("result", "Легкое депрессивное расстройство");
-                        else
-                            if ((points >= 60) && (points <= 69))
-                                intent.putExtra("result", "Депрессивное расстройство средней степени тяжести");
-                            else
-                                intent.putExtra("result", "Депрессивное расстройство  тяжелой степени тяжести");
+                    if ((points >= 10) && (points <= 18))
+                        intent.putExtra("result", "У вас легкая депрессия, астено-субдепрессивная симптоматика, может быть у соматических больных или невротический уровень");
+                    else
+                    if ((points >= 19) && (points <= 29))
+                        intent.putExtra("result", "У вас умеренная депрессия, критический уровень");
+                    else
+                        intent.putExtra("result", "У вас явно выраженная депрессивная симптоматика, не исключена эндогенность");
 
                     startActivity(intent);
                     finish();
@@ -88,16 +88,16 @@ public class ZungActivity extends AppCompatActivity {
                 } else {
                     Intent intent = new Intent(getApplicationContext(), EndActivity.class);
 
-                    if ((points >= 20) && (points <= 49))
-                        intent.putExtra("result", "Нормальное состояние");
+                    if ((points >= 0) && (points <= 9))
+                        intent.putExtra("result", "У вас отсутствуют депрессивные симптомы");
                     else
-                    if ((points >= 50) && (points <= 59))
-                        intent.putExtra("result", "Легкое депрессивное расстройство");
+                    if ((points >= 10) && (points <= 18))
+                        intent.putExtra("result", "У вас легкая депрессия, астено-субдепрессивная симптоматика, может быть у соматических больных или невротический уровень");
                     else
-                    if ((points >= 60) && (points <= 69))
-                        intent.putExtra("result", "Депрессивное расстройство средней степени тяжести");
+                    if ((points >= 19) && (points <= 29))
+                        intent.putExtra("result", "У вас умеренная депрессия, критический уровень");
                     else
-                        intent.putExtra("result", "Депрессивное расстройство  тяжелой степени тяжести");
+                        intent.putExtra("result", "У вас явно выраженная депрессивная симптоматика, не исключена эндогенность");
 
                     startActivity(intent);
                     finish();
@@ -117,16 +117,16 @@ public class ZungActivity extends AppCompatActivity {
                 } else {
                     Intent intent = new Intent(getApplicationContext(), EndActivity.class);
 
-                    if ((points >= 20) && (points <= 49))
-                        intent.putExtra("result", "Нормальное состояние");
+                    if ((points >= 0) && (points <= 9))
+                        intent.putExtra("result", "У вас отсутствуют депрессивные симптомы");
                     else
-                    if ((points >= 50) && (points <= 59))
-                        intent.putExtra("result", "Легкое депрессивное расстройство");
+                    if ((points >= 10) && (points <= 18))
+                        intent.putExtra("result", "У вас легкая депрессия, астено-субдепрессивная симптоматика, может быть у соматических больных или невротический уровень");
                     else
-                    if ((points >= 60) && (points <= 69))
-                        intent.putExtra("result", "Депрессивное расстройство средней степени тяжести");
+                    if ((points >= 19) && (points <= 29))
+                        intent.putExtra("result", "У вас умеренная депрессия, критический уровень");
                     else
-                        intent.putExtra("result", "Депрессивное расстройство  тяжелой степени тяжести");
+                        intent.putExtra("result", "У вас явно выраженная депрессивная симптоматика, не исключена эндогенность");
 
                     startActivity(intent);
                     finish();
@@ -145,16 +145,18 @@ public class ZungActivity extends AppCompatActivity {
                     setQuestionScreen(currentQuestion);
                 } else {
                     Intent intent = new Intent(getApplicationContext(), EndActivity.class);
-                    if ((points >= 20) && (points <= 49))
-                        intent.putExtra("result", "Нормальное состояние");
+
+                    if ((points >= 0) && (points <= 9))
+                        intent.putExtra("result", "У вас отсутствуют депрессивные симптомы");
                     else
-                    if ((points >= 50) && (points <= 59))
-                        intent.putExtra("result", "Легкое депрессивное расстройство");
+                    if ((points >= 10) && (points <= 18))
+                        intent.putExtra("result", "У вас легкая депрессия, астено-субдепрессивная симптоматика, может быть у соматических больных или невротический уровень");
                     else
-                    if ((points >= 60) && (points <= 69))
-                        intent.putExtra("result", "Депрессивное расстройство средней степени тяжести");
+                    if ((points >= 19) && (points <= 29))
+                        intent.putExtra("result", "У вас умеренная депрессия, критический уровень");
                     else
-                        intent.putExtra("result", "Депрессивное расстройство  тяжелой степени тяжести");
+                        intent.putExtra("result", "У вас явно выраженная депрессивная симптоматика, не исключена эндогенность");
+
                     startActivity(intent);
                     finish();
                 }
@@ -175,7 +177,7 @@ public class ZungActivity extends AppCompatActivity {
         questionItems = new ArrayList<>();
 
         //load all questions into json string
-        String jsonStr = loadJSONFromAssert("zung_test.json");
+        String jsonStr = loadJSONFromAssert("beck_test");
 
         //load all data into list
         try{
@@ -195,7 +197,7 @@ public class ZungActivity extends AppCompatActivity {
 
 
                 String questionString = question.getString("question");
-                //???????????????????????????????????????????????????????????????
+
                 answerAString = ansA.getString("answer");
                 scoreAString = ansA.getInt("score");
 
