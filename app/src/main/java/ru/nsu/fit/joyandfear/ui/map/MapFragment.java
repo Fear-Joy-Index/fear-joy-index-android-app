@@ -74,16 +74,32 @@ public class MapFragment extends Fragment{
                     polygonOptions.add(location);
                 }
                 Double score = map.getJSONObject(i).getDouble("score");
-                int polColor;
-                if (score < 3){
-                    polColor = Color.RED;
-                }
-                else{
-                    polColor = Color.GREEN;
+                int[] polColor = new int[3];
+                switch (score.intValue()){
+                    case 0:
+                        polColor[0]=255;
+                        polColor[1]=0;
+                        break;
+                    case 1:
+                        polColor[0]=255;
+                        polColor[1]=125;
+                        break;
+                    case 2:
+                        polColor[0]=255;
+                        polColor[1]=255;
+                        break;
+                    case 3:
+                        polColor[0]=160;
+                        polColor[1]=255;
+                        break;
+                    case 4:
+                    case 5:
+                        polColor[0]=0;
+                        polColor[1]=255;
                 }
                 Polygon polygon = mMap.addPolygon(polygonOptions
                         .strokeColor(Color.BLACK)
-                        .fillColor(polColor)
+                        .fillColor(Color.argb(100, polColor[0], polColor[1], 0))
                         .strokeWidth(5));
 
             }
