@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Joy And Fear</string>
+    <string name="title_map">Карта</string>
+    <string name="title_tests">Тесты</string>
+    <string name="title_statistic">Настройки</string>
+    <string name="test_start">Начать</string>
+    <string name="test_end">Вернуться к тестам</string>
+    <string name="test_ryakhovsky">Тест на уровень общительности Ряховского</string>
+    <string name="test_zung">Шкала Зунга</string>
+    <string name="test_snyder">Тест на оценку самоконтроля в общении (М. Снайдер)</string>
+    <string name="test_martin_seligman">Тест Мартина-Селингмана на оптимизм</string>
+    <string name="test_buss_durkee">Опросник враждебности Басса-Дарки</string>
+    <string name="test_beck">Шкала депрессии Бека</string>
+    <string name="test_empathy">Тест на уровень эмпатийности Юсупова</string>
+    <string name="test_sheehan">Шкала самооценки тревоги Шихана</string>
+    <string name="test_spilberg">Шкала самооценки тревоги Спилбера-Ханина</string>
+    <string name="test_taylor">Методика измерения уровня тревожности Тейлора</string>
+</resources>

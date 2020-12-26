@@ -1,13 +1,11 @@
-package ru.nsu.fit.joyandfear.ui.tests;
+package ru.nsu.fit.joyandfear.ui.tests.test_4;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import org.json.JSONArray;
@@ -20,6 +18,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import ru.nsu.fit.joyandfear.R;
+import ru.nsu.fit.joyandfear.ui.tests.EndActivity;
+import ru.nsu.fit.joyandfear.ui.tests.question_item.QuestionItem4;
 
 public class BeckActivity extends AppCompatActivity {
 
@@ -27,7 +27,7 @@ public class BeckActivity extends AppCompatActivity {
     Button button_A, button_B, button_C, button_D;
 
 
-    List<QuestionItem> questionItems;
+    List<QuestionItem4> questionItem4s;
     int currentQuestion = 0;
     int points = 0;
 
@@ -51,10 +51,10 @@ public class BeckActivity extends AppCompatActivity {
         button_A.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                points = questionItems.get(currentQuestion).getScoreA() + points;
+                points = questionItem4s.get(currentQuestion).getScoreA() + points;
 
                 //load next question if any
-                if (currentQuestion < questionItems.size()-1){
+                if (currentQuestion < questionItem4s.size()-1){
                     currentQuestion++;
                     setQuestionScreen(currentQuestion);
                 } else {
@@ -80,9 +80,9 @@ public class BeckActivity extends AppCompatActivity {
         button_B.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                points = questionItems.get(currentQuestion).getScoreB() + points;
+                points = questionItem4s.get(currentQuestion).getScoreB() + points;
                 //load next question if any
-                if (currentQuestion < questionItems.size()-1){
+                if (currentQuestion < questionItem4s.size()-1){
                     currentQuestion++;
                     setQuestionScreen(currentQuestion);
                 } else {
@@ -108,10 +108,10 @@ public class BeckActivity extends AppCompatActivity {
         button_C.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                points = questionItems.get(currentQuestion).getScoreC() + points;
+                points = questionItem4s.get(currentQuestion).getScoreC() + points;
 
                 //load next question if any
-                if (currentQuestion < questionItems.size()-1){
+                if (currentQuestion < questionItem4s.size()-1){
                     currentQuestion++;
                     setQuestionScreen(currentQuestion);
                 } else {
@@ -137,10 +137,10 @@ public class BeckActivity extends AppCompatActivity {
         button_D.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                points = questionItems.get(currentQuestion).getScoreD() + points;
+                points = questionItem4s.get(currentQuestion).getScoreD() + points;
 
                 //load next question if any
-                if (currentQuestion < questionItems.size()-1){
+                if (currentQuestion < questionItem4s.size()-1){
                     currentQuestion++;
                     setQuestionScreen(currentQuestion);
                 } else {
@@ -165,16 +165,16 @@ public class BeckActivity extends AppCompatActivity {
     }
 
     private void setQuestionScreen(int number){
-        question.setText(questionItems.get(number).getQuestion());
-        count.setText((number+1) + "/" + questionItems.size());
-        button_A.setText(questionItems.get(number).getAnswA());
-        button_B.setText(questionItems.get(number).getAnswB());
-        button_C.setText(questionItems.get(number).getAnswC());
-        button_D.setText(questionItems.get(number).getAnswD());
+        question.setText(questionItem4s.get(number).getQuestion());
+        count.setText((number+1) + "/" + questionItem4s.size());
+        button_A.setText(questionItem4s.get(number).getAnswA());
+        button_B.setText(questionItem4s.get(number).getAnswB());
+        button_C.setText(questionItem4s.get(number).getAnswC());
+        button_D.setText(questionItem4s.get(number).getAnswD());
     }
 
     private void loadAllQuestions(){
-        questionItems = new ArrayList<>();
+        questionItem4s = new ArrayList<>();
 
         //load all questions into json string
         String jsonStr = loadJSONFromAssert("beck_test");
@@ -210,7 +210,7 @@ public class BeckActivity extends AppCompatActivity {
                 answerDString = ansD.getString("answer");
                 scoreDString = ansD.getInt("score");
 
-                questionItems.add(new QuestionItem(
+                questionItem4s.add(new QuestionItem4(
                         questionString,
                         answerAString,
                         answerBString,
