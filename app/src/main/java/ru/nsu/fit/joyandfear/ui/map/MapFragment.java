@@ -9,6 +9,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.location.Location;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -23,8 +24,17 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.Polygon;
+import com.google.android.gms.maps.model.PolygonOptions;
 import com.google.android.gms.tasks.Task;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import ru.nsu.fit.joyandfear.R;
 import ru.nsu.fit.joyandfear.databinding.FragmentMapBinding;
 
@@ -41,10 +51,52 @@ public class MapFragment extends Fragment{
 
     private OnMapReadyCallback callback = googleMap -> {
         mMap = googleMap;
+        try {
+            final StringBuilder stringBuilder = new StringBuilder();
+            final InputStreamReader streamReader = new InputStreamReader(getResources().openRawResource(R.raw.map));  //временное чтение из файла TODO: вынести получение в async task
+            final BufferedReader bufferedReader = new BufferedReader(streamReader);
+
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                stringBuilder.append(line);
+                stringBuilder.append('\n');
+            }
+            final JSONObject mapJson = new JSONObject(stringBuilder.toString());
+            JSONArray map = mapJson.getJSONArray("map");
+            for (int i = 0; i < map.length(); i++) {
+                PolygonOptions polygonOptions = new PolygonOptions();
+                JSONArray coords = map.getJSONObject(i).getJSONArray("coordinates");
+                for (int j = 0; j < coords.length(); j++) {
+                    String[] latlong =  coords.getString(j).split(",");
+                    double latitude = Double.parseDouble(latlong[0]);
+                    double longitude = Double.parseDouble(latlong[1]);
+                    LatLng location = new LatLng(latitude, longitude);
+                    polygonOptions.add(location);
+                }
+                Double score = map.getJSONObject(i).getDouble("score");
+                int polColor;
+                if (score < 3){
+                    polColor = Color.RED;
+                }
+                else{
+                    polColor = Color.GREEN;
+                }
+                Polygon polygon = mMap.addPolygon(polygonOptions
+                        .strokeColor(Color.BLACK)
+                        .fillColor(polColor)
+                        .strokeWidth(5));
+
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
         LatLng latLng = new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude());
         MarkerOptions markerOptions = new MarkerOptions().position(latLng).title("You are here!");
         googleMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
-        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 5));
+        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 3));
         googleMap.addMarker(markerOptions);
     };
     @Override
@@ -63,12 +115,11 @@ public class MapFragment extends Fragment{
         task.addOnSuccessListener(location -> {
             if (location != null){
                 currentLocation = location;
-                SupportMapFragment mapFragment =
-                        (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map);
-                if (mapFragment != null) {
-                    mapFragment.getMapAsync(callback);
-                }
-
+            }
+            SupportMapFragment mapFragment =
+                    (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map);
+            if (mapFragment != null) {
+                mapFragment.getMapAsync(callback);
             }
         });
     }
