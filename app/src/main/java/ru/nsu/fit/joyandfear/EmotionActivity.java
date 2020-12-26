@@ -1,6 +1,7 @@
 package ru.nsu.fit.joyandfear;
 
 import android.app.AppComponentFactory;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.GridView;
 import android.content.Intent;
@@ -16,6 +17,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Calendar;
+
 import ru.nsu.fit.joyandfear.MainActivity;
 import ru.nsu.fit.joyandfear.R;
 
@@ -28,6 +31,18 @@ public class EmotionActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_emotion);
+
+        Calendar calendar = Calendar.getInstance();
+        int currentDay = calendar.get(Calendar.DAY_OF_MONTH);
+        SharedPreferences settings = getSharedPreferences("PREFS", 0);
+        int lastDay = settings.getInt("day", 0);
+
+        if (lastDay == currentDay)
+            openActivity();
+
+        SharedPreferences.Editor editor = settings.edit();
+        editor.putInt("day", currentDay);
+        editor.commit();
 
         e1 = findViewById(R.id.imageView_1);
         e2 = findViewById(R.id.imageView_2);

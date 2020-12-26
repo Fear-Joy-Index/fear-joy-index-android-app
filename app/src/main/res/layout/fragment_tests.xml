@@ -22,7 +22,7 @@
             android:layout_rowWeight="1"
             android:textSize="18dp"
             android:layout_margin="5sp"
-            android:text="Шкала Зунга"
+            android:text="@string/test_zung"
             />
 
         <Button
@@ -33,7 +33,7 @@
             android:layout_rowWeight="1"
             android:textSize="18dp"
             android:layout_margin="5sp"
-            android:text="Шкала самооценки тревоги Спилбера-Ханина"
+            android:text="@string/test_spilberg"
             />
 
         <Button
@@ -43,7 +43,7 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:layout_margin="5sp"
-            android:text="Шкала депрессии Бека"
+            android:text="@string/test_beck"
             android:textSize="18sp" />
         <Button
             android:id = "@+id/button_4"
@@ -53,7 +53,7 @@
             android:layout_rowWeight="1"
             android:textSize="18dp"
             android:layout_margin="5sp"
-            android:text="Button"
+            android:text="@string/test_ryakhovsky"
             />
         <Button
             android:id = "@+id/button_5"
@@ -63,7 +63,7 @@
             android:layout_rowWeight="1"
             android:textSize="18dp"
             android:layout_margin="5sp"
-            android:text="Button"
+            android:text="@string/test_taylor"
             />
         <Button
             android:id = "@+id/button_6"
@@ -73,7 +73,7 @@
             android:layout_rowWeight="1"
             android:textSize="18dp"
             android:layout_margin="5sp"
-            android:text="Button"
+            android:text="@string/test_snyder"
             />
         <Button
             android:id = "@+id/button_7"
@@ -83,7 +83,7 @@
             android:layout_rowWeight="1"
             android:textSize="18dp"
             android:layout_margin="5sp"
-            android:text="Button"
+            android:text="@string/test_sheehan"
             />
 
     </GridLayout>>
