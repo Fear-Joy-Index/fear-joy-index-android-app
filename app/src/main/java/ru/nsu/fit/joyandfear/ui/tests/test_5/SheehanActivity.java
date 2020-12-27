@@ -16,8 +16,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import ru.nsu.fit.joyandfear.R;
+import ru.nsu.fit.joyandfear.ui.settings.SettingsFragment;
 import ru.nsu.fit.joyandfear.ui.tests.EndActivity;
 import ru.nsu.fit.joyandfear.ui.tests.question_item.QuestionItem5;
 
@@ -35,7 +37,13 @@ public class SheehanActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_test_5);
+
+        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+            getSupportActionBar().setTitle("Шкала самооценки тревоги Шихана");
+        if (getResources().getConfiguration().locale.getLanguage().equals("en"))
+            getSupportActionBar().setTitle("Sheehan Patient-Rated Anxiety Scale, SPRAS");
 
         question = findViewById(R.id.question_view);
         button_A = findViewById(R.id.button_A);
@@ -59,13 +67,23 @@ public class SheehanActivity extends AppCompatActivity {
             } else {
                 Intent intent = new Intent(getApplicationContext(), EndActivity.class);
 
-                if ((points >= 0) && (points <= 20))
-                    intent.putExtra("result", "У вас нормальный уровень тревожности");
-                else
-                if ((points >= 30) && (points <= 80))
-                    intent.putExtra("result", "У вас аномальный уровень тревожности");
-                else
-                    intent.putExtra("result", "У вас высокий уровень тревожности");
+                if ((points >= 0) && (points <= 20)) {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "У вас нормальный уровень тревожности");
+                    else
+                        intent.putExtra("result", "Normal level of anxiety");
+                }else
+                if ((points >= 30) && (points <= 80)) {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "У вас аномальный уровень тревожности");
+                    else
+                        intent.putExtra("result", "Abnormal level of anxiety");
+                }else {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "У вас высокий уровень тревожности");
+                    else
+                        intent.putExtra("result", "High level of anxiety");
+                }
 
                 startActivity(intent);
                 finish();
@@ -81,77 +99,123 @@ public class SheehanActivity extends AppCompatActivity {
             } else {
                 Intent intent = new Intent(getApplicationContext(), EndActivity.class);
 
-                if ((points >= 20) && (points <= 49))
-                    intent.putExtra("result", "Нормальное состояние");
-                else
-                if ((points >= 50) && (points <= 59))
-                    intent.putExtra("result", "Легкое депрессивное расстройство");
-                else
-                if ((points >= 60) && (points <= 69))
-                    intent.putExtra("result", "Депрессивное расстройство средней степени тяжести");
-                else
-                    intent.putExtra("result", "Депрессивное расстройство  тяжелой степени тяжести");
+                if ((points >= 0) && (points <= 20)) {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "У вас нормальный уровень тревожности");
+                    else
+                        intent.putExtra("result", "Normal level of anxiety");
+                }else
+                if ((points >= 30) && (points <= 80)) {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "У вас аномальный уровень тревожности");
+                    else
+                        intent.putExtra("result", "Abnormal level of anxiety");
+                }else {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "У вас высокий уровень тревожности");
+                    else
+                        intent.putExtra("result", "High level of anxiety");
+                }
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        button_C.setOnClickListener(view -> {
+            points = questionItem5s.get(currentQuestion).getScoreC() + points;
+
+            //load next question if any
+            if (currentQuestion < questionItem5s.size()-1){
+                currentQuestion++;
+                setQuestionScreen(currentQuestion);
+            } else {
+                Intent intent = new Intent(getApplicationContext(), EndActivity.class);
+
+                if ((points >= 0) && (points <= 20)) {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "У вас нормальный уровень тревожности");
+                    else
+                        intent.putExtra("result", "Normal level of anxiety");
+                }else
+                if ((points >= 30) && (points <= 80)) {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "У вас аномальный уровень тревожности");
+                    else
+                        intent.putExtra("result", "Abnormal level of anxiety");
+                }else {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "У вас высокий уровень тревожности");
+                    else
+                        intent.putExtra("result", "High level of anxiety");
+                }
 
                 startActivity(intent);
                 finish();
             }
         });
 
-        button_C.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                points = questionItem5s.get(currentQuestion).getScoreC() + points;
+        button_D.setOnClickListener(view -> {
+            points = questionItem5s.get(currentQuestion).getScoreD() + points;
 
-                //load next question if any
-                if (currentQuestion < questionItem5s.size()-1){
-                    currentQuestion++;
-                    setQuestionScreen(currentQuestion);
-                } else {
-                    Intent intent = new Intent(getApplicationContext(), EndActivity.class);
-
-                    if ((points >= 20) && (points <= 49))
-                        intent.putExtra("result", "Нормальное состояние");
+            //load next question if any
+            if (currentQuestion < questionItem5s.size()-1){
+                currentQuestion++;
+                setQuestionScreen(currentQuestion);
+            } else {
+                Intent intent = new Intent(getApplicationContext(), EndActivity.class);
+                if ((points >= 0) && (points <= 20)) {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "У вас нормальный уровень тревожности");
                     else
-                    if ((points >= 50) && (points <= 59))
-                        intent.putExtra("result", "Легкое депрессивное расстройство");
+                        intent.putExtra("result", "Normal level of anxiety");
+                }else
+                if ((points >= 30) && (points <= 80)) {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "У вас аномальный уровень тревожности");
                     else
-                    if ((points >= 60) && (points <= 69))
-                        intent.putExtra("result", "Депрессивное расстройство средней степени тяжести");
+                        intent.putExtra("result", "Abnormal level of anxiety");
+                }else {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "У вас высокий уровень тревожности");
                     else
-                        intent.putExtra("result", "Депрессивное расстройство  тяжелой степени тяжести");
-
-                    startActivity(intent);
-                    finish();
+                        intent.putExtra("result", "High level of anxiety");
                 }
+                startActivity(intent);
+                finish();
             }
         });
 
-        button_D.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                points = questionItem5s.get(currentQuestion).getScoreD() + points;
+        button_E.setOnClickListener(view -> {
+            points = questionItem5s.get(currentQuestion).getScoreE() + points;
 
-                //load next question if any
-                if (currentQuestion < questionItem5s.size()-1){
-                    currentQuestion++;
-                    setQuestionScreen(currentQuestion);
-                } else {
-                    Intent intent = new Intent(getApplicationContext(), EndActivity.class);
-                    if ((points >= 20) && (points <= 49))
-                        intent.putExtra("result", "Нормальное состояние");
+            //load next question if any
+            if (currentQuestion < questionItem5s.size()-1){
+                currentQuestion++;
+                setQuestionScreen(currentQuestion);
+            } else {
+                Intent intent = new Intent(getApplicationContext(), EndActivity.class);
+                if ((points >= 0) && (points <= 20)) {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "У вас нормальный уровень тревожности");
                     else
-                    if ((points >= 50) && (points <= 59))
-                        intent.putExtra("result", "Легкое депрессивное расстройство");
+                        intent.putExtra("result", "Normal level of anxiety");
+                }else
+                if ((points >= 30) && (points <= 80)) {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "У вас аномальный уровень тревожности");
                     else
-                    if ((points >= 60) && (points <= 69))
-                        intent.putExtra("result", "Депрессивное расстройство средней степени тяжести");
+                        intent.putExtra("result", "Abnormal level of anxiety");
+                }else {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "У вас высокий уровень тревожности");
                     else
-                        intent.putExtra("result", "Депрессивное расстройство  тяжелой степени тяжести");
-                    startActivity(intent);
-                    finish();
+                        intent.putExtra("result", "High level of anxiety");
                 }
+                startActivity(intent);
+                finish();
             }
         });
+
     }
 
     private void setQuestionScreen(int number){
@@ -161,13 +225,18 @@ public class SheehanActivity extends AppCompatActivity {
         button_B.setText(questionItem5s.get(number).getAnswB());
         button_C.setText(questionItem5s.get(number).getAnswC());
         button_D.setText(questionItem5s.get(number).getAnswD());
+        button_E.setText(questionItem5s.get(number).getAnswE());
     }
 
     private void loadAllQuestions(){
         questionItem5s = new ArrayList<>();
+        String jsonStr;
 
         //load all questions into json string
-        String jsonStr = loadJSONFromAssert("sheehan_test.json");
+        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+            jsonStr = loadJSONFromAssert("ru/sheehan_test");
+        else
+            jsonStr = loadJSONFromAssert("en/sheehan_test_en");
 
         //load all data into list
         try{

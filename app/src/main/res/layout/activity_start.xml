@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/text_start_name"
-        android:layout_width="361dp"
-        android:layout_height="135dp"
+        android:layout_width="361sp"
+        android:layout_height="135sp"
         android:gravity="center"
         android:text="TextView"
         android:textSize="25sp"
@@ -17,15 +17,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.123" />
+        app:layout_constraintVertical_bias="0.063" />
 
     <TextView
         android:id="@+id/text_start"
-        android:layout_width="393dp"
-        android:layout_height="286dp"
+        android:layout_width="389sp"
+        android:layout_height="323sp"
+        android:autoSizeTextType="uniform"
         android:gravity="center"
         android:text="TextView"
-        android:autoSizeTextType="uniform"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

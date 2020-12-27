@@ -1,0 +1,290 @@
+{
+  "name": "Ryakhovsky test",
+  "type": "text",
+  "languarge": "en",
+  "questionCount": 20,
+  "description": "Test for identifying communicative abilities Test for determining the level of sociability",
+  "instruction": "Sociability — necessary quality in communication. Check how developed it is with you and what you need to improve your own communication technique. Answer the questions 'yes', 'sometimes' or 'no'",
+  "questions": [
+    {
+      "id": 1,
+      "question": "You have an ordinary or business meeting. Does it knock you outwaiting out of a rut?",
+      "class": "",
+      "A": {
+        "answer": "Yes",
+        "score": 2
+      },
+      "B": {
+        "answer": "Sometimes",
+        "score": 1
+      },
+      "C": {
+        "answer": "No",
+        "score": 0
+      }
+    },
+    {
+      "id": 2,
+      "question": "Are you confused and unhappy with the commission to speak? With a report, message, information at any meeting, with war or the like?",
+      "class": "",
+      "A": {
+        "answer": "Yes",
+        "score": 2
+      },
+      "B": {
+        "answer": "Sometimes",
+        "score": 1
+      },
+      "C": {
+        "answer": "No",
+        "score": 0
+      }
+    },
+    {
+      "id": 3,
+      "question": "Are you putting off your visit to the doctor until the last moment?",
+      "class": "",
+      "A": {
+        "answer": "Yes",
+        "score": 2
+      },
+      "B": {
+        "answer": "Sometimes",
+        "score": 1
+      },
+      "C": {
+        "answer": "No",
+        "score": 0
+      }
+    },
+    {
+      "id": 4,
+      "question": "You are offered to go on a business trip to a city where you have never have been. Will you do your best to avoid this problem? business trips?",
+      "class": "",
+      "A": {
+        "answer": "Yes",
+        "score": 2
+      },
+      "B": {
+        "answer": "Sometimes",
+        "score": 1
+      },
+      "C": {
+        "answer": "No",
+        "score": 0
+      }
+    },
+    {
+      "id": 5,
+      "question": "Do you love to share your experiences with anyone?",
+      "class": "",
+      "A": {
+        "answer": "Yes",
+        "score": 2
+      },
+      "B": {
+        "answer": "Sometimes",
+        "score": 1
+      },
+      "C": {
+        "answer": "No",
+        "score": 0
+      }
+    },
+    {
+      "id": 6,
+      "question": "Are you annoyed if a stranger on the street addresses to you with a request (to show the way, to name the time, to answer some question)?",
+      "class": "Are you annoyed if a stranger on the street addresses to you with a request (to show the way, to name the time, to answer some question)?",
+      "A": {
+        "answer": "Yes",
+        "score": 2
+      },
+      "B": {
+        "answer": "Sometimes",
+        "score": 1
+      },
+      "C": {
+        "answer": "No",
+        "score": 0
+      }
+    },
+    {
+      "id": 7,
+      "question": "Do you believe that there is a “father and child” problem and that everyone do you find it difficult to understand each other from different generations?",
+      "class": "",
+      "A": {
+        "answer": "Yes",
+        "score": 2
+      },
+      "B": {
+        "answer": "Sometimes",
+        "score": 1
+      },
+      "C": {
+        "answer": "No",
+        "score": 0
+      }
+    },{
+      "id": 8,
+      "question": "Are you ashamed to remind your friend that he forgot your faith? Pick up the money you borrowed a few months ago?",
+      "A": {
+        "answer": "Yes",
+        "score": 2
+      },
+      "B": {
+        "answer": "Sometimes",
+        "score": 1
+      },
+      "C": {
+        "answer": "No",
+        "score": 0
+      }
+    },
+    {
+      "id": 9,
+      "question": "In the restaurant or in the dining room, you were served clearly poor quality dish. Will you keep silent, only angrily pushing the plate away?",
+      "class": "",
+      "A": {
+        "answer": "Yes",
+        "score": 2
+      },
+      "B": {
+        "answer": "Sometimes",
+        "score": 1
+      },
+      "C": {
+        "answer": "No",
+        "score": 0
+      }
+    },
+    {
+      "id": 10,
+      "question": "Finding yourself alone with a stranger, you will not get up drink with him in conversation and you will be weary if he speaks first. Is it so?",
+      "class": "",
+      "A": {
+        "answer": "Yes",
+        "score": 2
+      },
+      "B": {
+        "answer": "Sometimes",
+        "score": 1
+      },
+      "C": {
+        "answer": "No",
+        "score": 0
+      }
+    },
+    {
+      "id": 11,
+      "question": "You are horrified by any long line, wherever it may be (in a store, library, cinema box office). Do you prefer denial hang on from your intention or stand in the tail and languish in waiting?",
+      "class": "",
+      "A": {
+        "answer": "Yes",
+        "score": 2
+      },
+      "B": {
+        "answer": "Sometimes",
+        "score": 1
+      },
+      "C": {
+        "answer": "No",
+        "score": 0
+      }
+    },
+    {
+      "id": 12,
+      "question": "Are you afraid to participate in any review committee conflict situations?",
+      "class": "",
+      "A": {
+        "answer": "Yes",
+        "score": 2
+      },
+      "B": {
+        "answer": "Sometimes",
+        "score": 1
+      },
+      "C": {
+        "answer": "No",
+        "score": 0
+      }
+    },
+    {
+      "id": 13,
+      "question": "You have your own highly individual assessment criteria works of literature, art, culture and any other people's opinions on this matter you will not accept. This is true?",
+      "class": "",
+      "A": {
+        "answer": "Yes",
+        "score": 2
+      },
+      "B": {
+        "answer": "Sometimes",
+        "score": 1
+      },
+      "C": {
+        "answer": "No",
+        "score": 0
+      }
+    },
+    {
+      "id": 14,
+      "question": "Hearing somewhere on the sidelines of the statement of a clearly erroneous point of view on a question well known to you, do you prefer pro to be silent and not engage in conversation?",
+      "class": "",
+      "A": {
+        "answer": "Yes",
+        "score": 2
+      },
+      "B": {
+        "answer": "Sometimes",
+        "score": 1
+      },
+      "C": {
+        "answer": "No",
+        "score": 0
+      }
+    },
+    {
+      "id": 15,
+      "question": "Does anyone ask you to help you understand this or that business issue or educational topic?",
+      "class": "",
+      "A": {
+        "answer": "Yes",
+        "score": 2
+      },
+      "B": {
+        "answer": "Sometimes",
+        "score": 1
+      },
+      "C": {
+        "answer": "No",
+        "score": 0
+      }
+    },
+    {
+      "id": 16,
+      "question": "Are you more willing to express your point of view (opinion, assessment) in writing than oral?",
+      "class": "",
+      "A": {
+        "answer": "Yes",
+        "score": 2
+      },
+      "B": {
+        "answer": "Sometimes",
+        "score": 1
+      },
+      "C": {
+        "answer": "No",
+        "score": 0
+      }
+    }
+  ],
+  "answers": [
+    {"values": [30, 31], "text": "You are clearly uncommunicative, and this is your problem, since you yourself suffer the most from this. But it is not easy for people close to you. You are difficult to rely on in a group effort. Try to be more sociable, control yourself."},
+    {"values": [25, 29], "text": "You are closed, taciturn, prefer lonely honor, so you have few friends. New job and the need for new contacts, if they do not plunge you into a panic, then for a long time unbalance. You know this feature of your character and are not are free with themselves. But do not limit yourself to just such discontent - in your power to reverse these character traits. Doesn't it happen that with any strong passion you suddenly acquire sex good communication skills? One has only to shake things up."},
+    {"values": [19, 24], "text": "You are somewhat sociable and unfamiliar the situation you feel quite confident. New problems don't scare you. And yet you converge with new people with a glance, in disputes and disputes you are reluctant to participate. In your statements, sometimes there are too many sarcasm, without any reason. These flaws are fixable."},
+    {"values": [14, 28], "text": "You have normal communication skills. You are curious are willing to listen to an interesting interlocutor, rather patient livable in communication, defend your point of view without irascibility.Without unpleasant experiences go to meet new people. At that time do not like noisy companies; extravagant antics and a lot the word annoys you."},
+    {"values": [9, 13],  "text": "You are very sociable (sometimes, perhaps even over measures). Curious, talkative, like to speak up on different issues dew, which sometimes irritates others. Willingly familiar hang out with new people. Love to be in the spotlight, no one refuse requests, although you cannot always fulfill them. It happens,flare up, but back away quickly. What you lack is perseverance,patience and courage when faced with serious problems.When desire, however, you can force yourself not to back down."},
+    {"values": [4, 8],   "text": "You must be a shirt-guy. Sociability beats outwith the key. You are always aware of all matters. You love to take part in all discussions, although serious topics may give you migraines or even blues. You are willing to take the floor on any issue, even if you have a superficial understanding of it. You feel at ease everywhere. Take on any business, although you cannot always successfully bring it to end. For this very reason, leaders and colleagues treat you with some apprehension and doubt. Consider these facts."},
+    {"values": [0, 3],   "text": "Your communication skills are painful.ter. You are talkative, verbose, intervene in matters that you do not have they have nothing to do with you. You take to judge the problems in which completely incompetent. Whether you want to or not, you often come across the rank of all sorts of conflicts in your environment. Hot-tempered, resentmentare often biased. Serious work is not for you. Liudyam - and at work, and at home, and in general everywhere - it is difficult with you. Yes, you need to work on yourself and your character! First of all, raised have patience and restraint, respect people, finally, think about your health - this lifestyle is not passes without a trace."}
+  ]
+
+}

@@ -37,6 +37,11 @@ public class BeckActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_4);
 
+        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+            getSupportActionBar().setTitle("Шкала депрессии Бека");
+        if (getResources().getConfiguration().locale.getLanguage().equals("en"))
+            getSupportActionBar().setTitle("Beck Depression Inventory");
+
         question = findViewById(R.id.question_view);
         button_A = findViewById(R.id.button_A);
         button_B = findViewById(R.id.button_B);
@@ -60,17 +65,29 @@ public class BeckActivity extends AppCompatActivity {
                 } else {
                     Intent intent = new Intent(getApplicationContext(), EndActivity.class);
 
-                    if ((points >= 0) && (points <= 9))
-                        intent.putExtra("result", "У вас отсутствуют депрессивные симптомы");
-                    else
-                    if ((points >= 10) && (points <= 18))
-                        intent.putExtra("result", "У вас легкая депрессия, астено-субдепрессивная симптоматика, может быть у соматических больных или невротический уровень");
-                    else
-                    if ((points >= 19) && (points <= 29))
-                        intent.putExtra("result", "У вас умеренная депрессия, критический уровень");
-                    else
-                        intent.putExtra("result", "У вас явно выраженная депрессивная симптоматика, не исключена эндогенность");
-
+                    if ((points >= 0) && (points <= 9)) {
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "У вас отсутствуют депрессивные симптомы.");
+                        else
+                            intent.putExtra("result", "The absence of depressive symptoms.");
+                    }else
+                    if ((points >= 10) && (points <= 18)) {
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "У вас легкая депрессия, астено-субдепрессивная симптоматика, может быть у соматических больных или невротический уровень.");
+                        else
+                            intent.putExtra("result", "Mild depression, asthenic-subdepressive symptoms, M. B. in somatic patients or neurotic level.");
+                    }else
+                    if ((points >= 19) && (points <= 29)) {
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "У вас умеренная депрессия, критический уровень.");
+                        else
+                            intent.putExtra("result", "Moderate depression, critical level.");
+                    }else {
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "У вас явно выраженная депрессивная симптоматика, не исключена эндогенность.");
+                        else
+                            intent.putExtra("result", "Clearly expressed depressive symptoms, endogeneity is not excluded.");
+                    }
                     startActivity(intent);
                     finish();
                 }
@@ -88,17 +105,29 @@ public class BeckActivity extends AppCompatActivity {
                 } else {
                     Intent intent = new Intent(getApplicationContext(), EndActivity.class);
 
-                    if ((points >= 0) && (points <= 9))
-                        intent.putExtra("result", "У вас отсутствуют депрессивные симптомы");
-                    else
-                    if ((points >= 10) && (points <= 18))
-                        intent.putExtra("result", "У вас легкая депрессия, астено-субдепрессивная симптоматика, может быть у соматических больных или невротический уровень");
-                    else
-                    if ((points >= 19) && (points <= 29))
-                        intent.putExtra("result", "У вас умеренная депрессия, критический уровень");
-                    else
-                        intent.putExtra("result", "У вас явно выраженная депрессивная симптоматика, не исключена эндогенность");
-
+                    if ((points >= 0) && (points <= 9)) {
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "У вас отсутствуют депрессивные симптомы.");
+                        else
+                            intent.putExtra("result", "The absence of depressive symptoms.");
+                    }else
+                    if ((points >= 10) && (points <= 18)) {
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "У вас легкая депрессия, астено-субдепрессивная симптоматика, может быть у соматических больных или невротический уровень.");
+                        else
+                            intent.putExtra("result", "Mild depression, asthenic-subdepressive symptoms, M. B. in somatic patients or neurotic level.");
+                    }else
+                    if ((points >= 19) && (points <= 29)) {
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "У вас умеренная депрессия, критический уровень.");
+                        else
+                            intent.putExtra("result", "Moderate depression, critical level.");
+                    }else {
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "У вас явно выраженная депрессивная симптоматика, не исключена эндогенность.");
+                        else
+                            intent.putExtra("result", "Clearly expressed depressive symptoms, endogeneity is not excluded.");
+                    }
                     startActivity(intent);
                     finish();
                 }
@@ -117,17 +146,29 @@ public class BeckActivity extends AppCompatActivity {
                 } else {
                     Intent intent = new Intent(getApplicationContext(), EndActivity.class);
 
-                    if ((points >= 0) && (points <= 9))
-                        intent.putExtra("result", "У вас отсутствуют депрессивные симптомы");
-                    else
-                    if ((points >= 10) && (points <= 18))
-                        intent.putExtra("result", "У вас легкая депрессия, астено-субдепрессивная симптоматика, может быть у соматических больных или невротический уровень");
-                    else
-                    if ((points >= 19) && (points <= 29))
-                        intent.putExtra("result", "У вас умеренная депрессия, критический уровень");
-                    else
-                        intent.putExtra("result", "У вас явно выраженная депрессивная симптоматика, не исключена эндогенность");
-
+                    if ((points >= 0) && (points <= 9)) {
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "У вас отсутствуют депрессивные симптомы.");
+                        else
+                            intent.putExtra("result", "The absence of depressive symptoms.");
+                    }else
+                    if ((points >= 10) && (points <= 18)) {
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "У вас легкая депрессия, астено-субдепрессивная симптоматика, может быть у соматических больных или невротический уровень.");
+                        else
+                            intent.putExtra("result", "Mild depression, asthenic-subdepressive symptoms, M. B. in somatic patients or neurotic level.");
+                    }else
+                    if ((points >= 19) && (points <= 29)) {
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "У вас умеренная депрессия, критический уровень.");
+                        else
+                            intent.putExtra("result", "Moderate depression, critical level.");
+                    }else {
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "У вас явно выраженная депрессивная симптоматика, не исключена эндогенность.");
+                        else
+                            intent.putExtra("result", "Clearly expressed depressive symptoms, endogeneity is not excluded.");
+                    }
                     startActivity(intent);
                     finish();
                 }
@@ -146,17 +187,29 @@ public class BeckActivity extends AppCompatActivity {
                 } else {
                     Intent intent = new Intent(getApplicationContext(), EndActivity.class);
 
-                    if ((points >= 0) && (points <= 9))
-                        intent.putExtra("result", "У вас отсутствуют депрессивные симптомы");
-                    else
-                    if ((points >= 10) && (points <= 18))
-                        intent.putExtra("result", "У вас легкая депрессия, астено-субдепрессивная симптоматика, может быть у соматических больных или невротический уровень");
-                    else
-                    if ((points >= 19) && (points <= 29))
-                        intent.putExtra("result", "У вас умеренная депрессия, критический уровень");
-                    else
-                        intent.putExtra("result", "У вас явно выраженная депрессивная симптоматика, не исключена эндогенность");
-
+                    if ((points >= 0) && (points <= 9)) {
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "У вас отсутствуют депрессивные симптомы.");
+                        else
+                            intent.putExtra("result", "The absence of depressive symptoms.");
+                    }else
+                    if ((points >= 10) && (points <= 18)) {
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "У вас легкая депрессия, астено-субдепрессивная симптоматика, может быть у соматических больных или невротический уровень.");
+                        else
+                            intent.putExtra("result", "Mild depression, asthenic-subdepressive symptoms, M. B. in somatic patients or neurotic level.");
+                    }else
+                    if ((points >= 19) && (points <= 29)) {
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "У вас умеренная депрессия, критический уровень.");
+                        else
+                            intent.putExtra("result", "Moderate depression, critical level.");
+                    }else {
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "У вас явно выраженная депрессивная симптоматика, не исключена эндогенность.");
+                        else
+                            intent.putExtra("result", "Clearly expressed depressive symptoms, endogeneity is not excluded.");
+                    }
                     startActivity(intent);
                     finish();
                 }
@@ -175,9 +228,12 @@ public class BeckActivity extends AppCompatActivity {
 
     private void loadAllQuestions(){
         questionItem4s = new ArrayList<>();
-
+        String jsonStr;
         //load all questions into json string
-        String jsonStr = loadJSONFromAssert("beck_test");
+        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+            jsonStr = loadJSONFromAssert("ru/beck_test");
+        else
+            jsonStr = loadJSONFromAssert("en/beck_test_en");
 
         //load all data into list
         try{

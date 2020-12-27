@@ -1,0 +1,436 @@
+{
+  "name": "Zung Self-Rating Depression Scale (SDS)",
+  "type": "text",
+  "language": "en",
+  "questionCount": 20,
+  "description": "The Zung Self-Rating Depression Scale was designed by Duke University psychiatrist William W.K. Zung MD (1929–1992) to assess the level of depression for patients diagnosed with depressive disorder.",
+  "instruction": "For each item below, please check the column which best describes how often you felt or behaved this way during the past several days.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "I feel down hearted and blue",
+      "class": "",
+      "A": {
+        "answer": "A Little Of The Time",
+        "score": 1
+      },
+      "B": {
+        "answer": "Some Of The Time",
+        "score": 2
+      },
+      "C": {
+        "answer": "Good Part Of The Time",
+        "score": 3
+      },
+      "D": {
+        "answer": "Most Of The Time",
+        "score": 4
+      }
+    },
+    {
+      "id": 2,
+      "question": "Morning is when I feel the best",
+      "class": "",
+      "A": {
+        "answer": "A Little Of The Time",
+        "score": 4
+      },
+      "B": {
+        "answer": "Some Of The Time",
+        "score": 3
+      },
+      "C": {
+        "answer": "Good Part Of The Time",
+        "score": 2
+      },
+      "D": {
+        "answer": "Most Of The Time",
+        "score": 1
+      }
+    },
+    {
+      "id": 3,
+      "question": "I have crying spells or feel like it",
+      "class": "",
+      "A": {
+        "answer": "A Little Of The Time",
+        "score": 1
+      },
+      "B": {
+        "answer": "Some Of The Time",
+        "score": 2
+      },
+      "C": {
+        "answer": "Good Part Of The Time",
+        "score": 3
+      },
+      "D": {
+        "answer": "Most Of The Time",
+        "score": 4
+      }
+    },
+    {
+      "id": 4,
+      "question": "I have trouble sleeping at night",
+      "class": "",
+      "A": {
+        "answer": "A Little Of The Time",
+        "score": 1
+      },
+      "B": {
+        "answer": "Some Of The Time",
+        "score": 2
+      },
+      "C": {
+        "answer": "Good Part Of The Time",
+        "score": 3
+      },
+      "D": {
+        "answer": "Most Of The Time",
+        "score": 4
+      }
+    },
+    {
+      "id": 5,
+      "question": "I eat as much as I used to",
+      "class": "",
+      "A": {
+        "answer": "A Little Of The Time",
+        "score": 4
+      },
+      "B": {
+        "answer": "Some Of The Time",
+        "score": 3
+      },
+      "C": {
+        "answer": "Good Part Of The Time",
+        "score": 2
+      },
+      "D": {
+        "answer": "Most Of The Time",
+        "score": 1
+      }
+    },
+    {
+      "id": 6,
+      "question": "I still enjoy sex",
+      "class": "",
+      "A": {
+        "answer": "A Little Of The Time",
+        "score": 4
+      },
+      "B": {
+        "answer": "Some Of The Time",
+        "score": 3
+      },
+      "C": {
+        "answer": "Good Part Of The Time",
+        "score": 2
+      },
+      "D": {
+        "answer": "Most Of The Time",
+        "score": 1
+      }
+    },
+    {
+      "id": 7,
+      "question": "I notice that I am losing weight",
+      "class": "",
+      "A": {
+        "answer": "A Little Of The Time",
+        "score": 1
+      },
+      "B": {
+        "answer": "Some Of The Time",
+        "score": 2
+      },
+      "C": {
+        "answer": "Good Part Of The Time",
+        "score": 3
+      },
+      "D": {
+        "answer": "Most Of The Time",
+        "score": 4
+      }
+    },{
+      "id": 8,
+      "question": "I have trouble with constipation...",
+      "class": "",
+      "A": {
+        "answer": "A Little Of The Time",
+        "score": 1
+      },
+      "B": {
+        "answer": "Some Of The Time",
+        "score": 2
+      },
+      "C": {
+        "answer": "Good Part Of The Time",
+        "score": 3
+      },
+      "D": {
+        "answer": "Most Of The Time",
+        "score": 4
+      }
+    },
+    {
+      "id": 9,
+      "question": "My heart beats faster than usual",
+      "class": "",
+      "A": {
+        "answer": "A Little Of The Time",
+        "score": 1
+      },
+      "B": {
+        "answer": "Some Of The Time",
+        "score": 2
+      },
+      "C": {
+        "answer": "Good Part Of The Time",
+        "score": 3
+      },
+      "D": {
+        "answer": "Most Of The Time",
+        "score": 4
+      }
+    },
+    {
+      "id": 10,
+      "question": "I get tired for no reason",
+      "class": "",
+      "A": {
+        "answer": "A Little Of The Time",
+        "score": 1
+      },
+      "B": {
+        "answer": "Some Of The Time",
+        "score": 2
+      },
+      "C": {
+        "answer": "Good Part Of The Time",
+        "score": 3
+      },
+      "D": {
+        "answer": "Most Of The Time",
+        "score": 4
+      }
+    },
+    {
+      "id": 11,
+      "question": "My mind is as clear as it used to be",
+      "class": "",
+      "A": {
+        "answer": "A Little Of The Time",
+        "score": 4
+      },
+      "B": {
+        "answer": "Some Of The Time",
+        "score": 3
+      },
+      "C": {
+        "answer": "Good Part Of The Time",
+        "score": 2
+      },
+      "D": {
+        "answer": "Most Of The Time",
+        "score": 1
+      }
+    },
+    {
+      "id": 12,
+      "question": "I find it easy to do the things I used to",
+      "class": "",
+      "A": {
+        "answer": "A Little Of The Time",
+        "score": 4
+      },
+      "B": {
+        "answer": "Some Of The Time",
+        "score": 3
+      },
+      "C": {
+        "answer": "Good Part Of The Time",
+        "score": 2
+      },
+      "D": {
+        "answer": "Most Of The Time",
+        "score": 1
+      }
+    },
+    {
+      "id": 13,
+      "question": "I am restless and can’t keep still",
+      "class": "",
+      "A": {
+        "answer": "A Little Of The Time",
+        "score": 1
+      },
+      "B": {
+        "answer": "Some Of The Time",
+        "score": 2
+      },
+      "C": {
+        "answer": "Good Part Of The Time",
+        "score": 3
+      },
+      "D": {
+        "answer": "Most Of The Time",
+        "score": 4
+      }
+    },
+    {
+      "id": 14,
+      "question": "I feel hopeful about the future",
+      "class": "",
+      "A": {
+        "answer": "A Little Of The Time",
+        "score": 4
+      },
+      "B": {
+        "answer": "Some Of The Time",
+        "score": 3
+      },
+      "C": {
+        "answer": "Good Part Of The Time",
+        "score": 2
+      },
+      "D": {
+        "answer": "Most Of The Time",
+        "score": 1
+      }
+    },
+    {
+      "id": 15,
+      "question": "I am more irritable than usual",
+      "class": "",
+      "A": {
+        "answer": "A Little Of The Time",
+        "score": 1
+      },
+      "B": {
+        "answer": "Some Of The Time",
+        "score": 2
+      },
+      "C": {
+        "answer": "Good Part Of The Time",
+        "score": 3
+      },
+      "D": {
+        "answer": "Most Of The Time",
+        "score": 4
+      }
+    },
+    {
+      "id": 16,
+      "question": "I find it easy to make decisions",
+      "class": "",
+      "A": {
+        "answer": "A Little Of The Time",
+        "score": 4
+      },
+      "B": {
+        "answer": "Some Of The Time",
+        "score": 3
+      },
+      "C": {
+        "answer": "Good Part Of The Time",
+        "score": 2
+      },
+      "D": {
+        "answer": "Most Of The Time",
+        "score": 1
+      }
+    },
+    {
+      "id": 17,
+      "question": "I feel that I am useful and needed",
+      "class": "",
+      "A": {
+        "answer": "A Little Of The Time",
+        "score": 4
+      },
+      "B": {
+        "answer": "Some Of The Time",
+        "score": 3
+      },
+      "C": {
+        "answer": "Good Part Of The Time",
+        "score": 2
+      },
+      "D": {
+        "answer": "Most Of The Time",
+        "score": 1
+      }
+    },
+    {
+      "id": 18,
+      "question": "My life is pretty full",
+      "class": "",
+      "A": {
+        "answer": "A Little Of The Time",
+        "score": 4
+      },
+      "B": {
+        "answer": "Some Of The Time",
+        "score": 3
+      },
+      "C": {
+        "answer": "Good Part Of The Time",
+        "score": 2
+      },
+      "D": {
+        "answer": "Most Of The Time",
+        "score": 1
+      }
+    },
+    {
+      "id": 19,
+      "question": "I feel that others would be better off if I were dead",
+      "class": "",
+      "A": {
+        "answer": "A Little Of The Time",
+        "score": 1
+      },
+      "B": {
+        "answer": "Some Of The Time",
+        "score": 2
+      },
+      "C": {
+        "answer": "Good Part Of The Time",
+        "score": 3
+      },
+      "D": {
+        "answer": "Most Of The Time",
+        "score": 4
+      }
+    },
+    {
+      "id": 20,
+      "question": "I still enjoy the things I used to do",
+      "class": "",
+      "A": {
+        "answer": "A Little Of The Time",
+        "score": 4
+      },
+      "B": {
+        "answer": "Some Of The Time",
+        "score": 3
+      },
+      "C": {
+        "answer": "Good Part Of The Time",
+        "score": 2
+      },
+      "D": {
+        "answer": "Most Of The Time",
+        "score": 1
+      }
+    }
+  ],
+  "answers": [
+    {"values": [20, 44], "text": "Normal Range"},
+    {"values": [45, 59], "text": "Mildly Depressed"},
+    {"values": [60, 69], "text": "Moderately Depressed"},
+    {"values": [70, 0],  "text": " Severely Depressed"}
+  ]
+
+}

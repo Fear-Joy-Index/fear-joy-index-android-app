@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.tests.TestsFragment">
+    tools:context=".ui.tests.TestsFragment"
+    android:id="@+id/testsContainer">
 
     <GridLayout
         android:layout_height="match_parent"
@@ -83,7 +84,17 @@
             android:layout_rowWeight="1"
             android:textSize="18dp"
             android:layout_margin="5sp"
-            android:text="@string/test_sheehan"
+            android:text="@string/test_sheehan"/>
+
+        <Button
+            android:id = "@+id/button_8"
+            android:layout_gravity="fill"
+            android:layout_height="100sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="18dp"
+            android:layout_margin="5sp"
+            android:text="@string/test_empathy"
             />
 
     </GridLayout>>

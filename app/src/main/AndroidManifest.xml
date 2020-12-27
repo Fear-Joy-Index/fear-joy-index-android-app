@@ -94,6 +94,22 @@
         </activity>
 
         <activity
+            android:name=".ui.tests.test_6.YusupovActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.tests.TestsFragment"
+            android:label="@string/app_name">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name=".ui.tests.StartActivity"
             android:label="@string/app_name">
             <intent-filter>

@@ -1,0 +1,857 @@
+{
+  "name": "State Trait Anxiety Inventory",
+  "type": "text",
+  "languarge": "en",
+  "questionCount": 21,
+  "description": "Read each statement and select the appropriate response to indicate how you feelright now, that is, at this very moment. There are no right or wrong answers. Do notspend too much time on any one statement but give the answer which seems todescribe your present feelings best",
+  "instruction": [
+    {"text": "A number of statements which people have used to describe themselves are given below. Read each statement and then blacken the appropriate circle to the right of the statement to indicate how you feel right now, that is, at this moment. There are no right or wrong answers. Do not spend too much time on any one statement but give the answer which seems to describe your present feelings best."},
+    {"text": "A number of statements which people have used to describe themselves are given below. Read each statement and then blacken in the appropriate circle to the right of the statement to indicate you generally feel."}
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "I feel calm",
+      "class": "",
+      "A": {
+        "answer": "Not at all",
+        "score": 1
+      },
+      "B": {
+        "answer": "A little",
+        "score": 2
+      },
+      "C": {
+        "answer": "Somewhat",
+        "score": 3
+      },
+      "D": {
+        "answer": "Very Much So",
+        "score": 4
+      }
+    },
+    {
+      "id": 2,
+      "question": "I feel secure",
+      "class": "",
+      "A": {
+        "answer": "Not at all",
+        "score": 1
+      },
+      "B": {
+        "answer": "A little",
+        "score": 2
+      },
+      "C": {
+        "answer": "Somewhat",
+        "score": 3
+      },
+      "D": {
+        "answer": "Very Much So",
+        "score": 4
+      }
+    },
+    {
+      "id": 3,
+      "question": "I feel tense",
+      "class": "",
+      "A": {
+        "answer": "Not at all",
+        "score": 1
+      },
+      "B": {
+        "answer": "A little",
+        "score": 2
+      },
+      "C": {
+        "answer": "Somewhat",
+        "score": 3
+      },
+      "D": {
+        "answer": "Совершненно Somewhat",
+        "score": 4
+      }
+    },
+    {
+      "id": 4,
+      "question": "I feel strained",
+      "class": "",
+      "A": {
+        "answer": "Not at all",
+        "score": 1
+      },
+      "B": {
+        "answer": "A little",
+        "score": 2
+      },
+      "C": {
+        "answer": "Somewhat",
+        "score": 3
+      },
+      "D": {
+        "answer": "Very Much So",
+        "score": 4
+      }
+    },
+    {
+      "id": 5,
+      "question": "I feel at ease",
+      "class": "",
+      "A": {
+        "answer": "Not at all",
+        "score": 1
+      },
+      "B": {
+        "answer": "A little",
+        "score": 2
+      },
+      "C": {
+        "answer": "Somewhat",
+        "score": 3
+      },
+      "D": {
+        "answer": "Very Much So",
+        "score": 4
+      }
+    },
+    {
+      "id": 6,
+      "question": "I feel upset",
+      "class": "",
+      "A": {
+        "answer": "Not at all",
+        "score": 1
+      },
+      "B": {
+        "answer": "A little",
+        "score": 2
+      },
+      "C": {
+        "answer": "Somewhat",
+        "score": 3
+      },
+      "D": {
+        "answer": "Very Much So",
+        "score": 4
+      }
+    },
+    {
+      "id": 7,
+      "question": "I am presently worrying over possible misfortunes",
+      "class": "",
+      "A": {
+        "answer": "Not at all",
+        "score": 1
+      },
+      "B": {
+        "answer": "A little",
+        "score": 2
+      },
+      "C": {
+        "answer": "Somewhat",
+        "score": 3
+      },
+      "D": {
+        "answer": "Very Much So",
+        "score": 4
+      }
+    },{
+      "id": 8,
+      "question": "I feel satisfied",
+      "class": "",
+      "A": {
+        "answer": "Not at all",
+        "score": 1
+      },
+      "B": {
+        "answer": "A little",
+        "score": 2
+      },
+      "C": {
+        "answer": "Somewhat",
+        "score": 3
+      },
+      "D": {
+        "answer": "Very Much So",
+        "score": 4
+      }
+    },
+    {
+      "id": 9,
+      "question": "I feel frightened",
+      "class": "",
+      "A": {
+        "answer": "Not at all",
+        "score": 1
+      },
+      "B": {
+        "answer": "A little",
+        "score": 2
+      },
+      "C": {
+        "answer": "Somewhat",
+        "score": 3
+      },
+      "D": {
+        "answer": "Very Much So",
+        "score": 4
+      }
+    },
+    {
+      "id": 10,
+      "question": "I feel uncomfortable",
+      "class": "",
+      "A": {
+        "answer": "Not at all",
+        "score": 1
+      },
+      "B": {
+        "answer": "A little",
+        "score": 2
+      },
+      "C": {
+        "answer": "Somewhat",
+        "score": 3
+      },
+      "D": {
+        "answer": "Very Much So",
+        "score": 4
+      }
+    },
+    {
+      "id": 11,
+      "question": "I feel self confident",
+      "class": "",
+      "A": {
+        "answer": "Not at all",
+        "score": 1
+      },
+      "B": {
+        "answer": "A little",
+        "score": 2
+      },
+      "C": {
+        "answer": "Somewhat",
+        "score": 3
+      },
+      "D": {
+        "answer": "Very Much So",
+        "score": 4
+      }
+    },
+    {
+      "id": 12,
+      "question": "I feel nervous",
+      "class": "",
+      "A": {
+        "answer": "Not at all",
+        "score": 1
+      },
+      "B": {
+        "answer": "A little",
+        "score": 2
+      },
+      "C": {
+        "answer": "Somewhat",
+        "score": 3
+      },
+      "D": {
+        "answer": "Very Much So",
+        "score": 4
+      }
+    },
+    {
+      "id": 13,
+      "question": "I feel jittery",
+      "class": "",
+      "A": {
+        "answer": "Not at all",
+        "score": 1
+      },
+      "B": {
+        "answer": "A little",
+        "score": 2
+      },
+      "C": {
+        "answer": "Somewhat",
+        "score": 3
+      },
+      "D": {
+        "answer": "Very Much So",
+        "score": 4
+      }
+    },
+    {
+      "id": 14,
+      "question": "I feel indecisive",
+      "class": "",
+      "A": {
+        "answer": "Not at all",
+        "score": 1
+      },
+      "B": {
+        "answer": "A little",
+        "score": 2
+      },
+      "C": {
+        "answer": "Somewhat",
+        "score": 3
+      },
+      "D": {
+        "answer": "Very Much So",
+        "score": 4
+      }
+    },
+    {
+      "id": 15,
+      "question": "I am relaxed",
+      "class": "",
+      "A": {
+        "answer": "Not at all",
+        "score": 1
+      },
+      "B": {
+        "answer": "A little",
+        "score": 2
+      },
+      "C": {
+        "answer": "Somewhat",
+        "score": 3
+      },
+      "D": {
+        "answer": "Very Much So",
+        "score": 4
+      }
+    },
+    {
+      "id": 16,
+      "question": "I feel content",
+      "class": "",
+      "A": {
+        "answer": "Not at all",
+        "score": 1
+      },
+      "B": {
+        "answer": "A little",
+        "score": 2
+      },
+      "C": {
+        "answer": "Somewhat",
+        "score": 3
+      },
+      "D": {
+        "answer": "Very Much So",
+        "score": 4
+      }
+    },
+    {
+      "id": 17,
+      "question": "I am worried",
+      "class": "",
+      "A": {
+        "answer": "Not at all",
+        "score": 1
+      },
+      "B": {
+        "answer": "A little",
+        "score": 2
+      },
+      "C": {
+        "answer": "Somewhat",
+        "score": 3
+      },
+      "D": {
+        "answer": "Very Much So",
+        "score": 4
+      }
+    },
+    {
+      "id": 18,
+      "question": "I feel confused",
+      "class": "",
+      "A": {
+        "answer": "Not at all",
+        "score": 1
+      },
+      "B": {
+        "answer": "A little",
+        "score": 2
+      },
+      "C": {
+        "answer": "Somewhat",
+        "score": 3
+      },
+      "D": {
+        "answer": "Very Much So",
+        "score": 4
+      }
+    },
+    {
+      "id": 19,
+      "question": "I feel steady",
+      "class": "",
+      "A": {
+        "answer": "Not at all",
+        "score": 1
+      },
+      "B": {
+        "answer": "A little",
+        "score": 2
+      },
+      "C": {
+        "answer": "Somewhat",
+        "score": 3
+      },
+      "D": {
+        "answer": "Very Much So",
+        "score": 4
+      }
+    },
+    {
+      "id": 20,
+      "question": "I feel pleasant",
+      "class": "",
+      "A": {
+        "answer": "Not at all",
+        "score": 1
+      },
+      "B": {
+        "answer": "A little",
+        "score": 2
+      },
+      "C": {
+        "answer": "Somewhat",
+        "score": 3
+      },
+      "D": {
+        "answer": "Very Much So",
+        "score": 4
+      }
+    },
+    {
+      "id": 21,
+      "question": "I feel pleasant",
+      "class": "",
+      "A": {
+        "answer": "almost never",
+        "score": 1
+      },
+      "B": {
+        "answer": "sometimes",
+        "score": 2
+      },
+      "C": {
+        "answer": "often",
+        "score": 3
+      },
+      "D": {
+        "answer": "almost always",
+        "score": 4
+      }
+    },
+    {
+      "id": 22,
+      "question": "I feel nervous and restless",
+      "class": "",
+      "A": {
+        "answer": "almost never",
+        "score": 1
+      },
+      "B": {
+        "answer": "sometimes",
+        "score": 2
+      },
+      "C": {
+        "answer": "often",
+        "score": 3
+      },
+      "D": {
+        "answer": "almost always",
+        "score": 4
+      }
+    },
+    {
+      "id": 23,
+      "question": "I feel satisfied with myself",
+      "class": "",
+      "A": {
+        "answer": "almost never",
+        "score": 1
+      },
+      "B": {
+        "answer": "sometimes",
+        "score": 2
+      },
+      "C": {
+        "answer": "often",
+        "score": 3
+      },
+      "D": {
+        "answer": "almost always",
+        "score": 4
+      }
+    },
+    {
+      "id": 24,
+      "question": "I wish I could be as happy as others seem to be",
+      "class": "",
+      "A": {
+        "answer": "almost never",
+        "score": 1
+      },
+      "B": {
+        "answer": "sometimes",
+        "score": 2
+      },
+      "C": {
+        "answer": "often",
+        "score": 3
+      },
+      "D": {
+        "answer": "almost always",
+        "score": 4
+      }
+    },
+    {
+      "id": 25,
+      "question": "I feel like a failure",
+      "class": "",
+      "A": {
+        "answer": "almost never",
+        "score": 1
+      },
+      "B": {
+        "answer": "sometimes",
+        "score": 2
+      },
+      "C": {
+        "answer": "often",
+        "score": 3
+      },
+      "D": {
+        "answer": "almost always",
+        "score": 4
+      }
+    },
+    {
+      "id": 26,
+      "question": "I feel rested",
+      "class": "",
+      "A": {
+        "answer": "almost never",
+        "score": 1
+      },
+      "B": {
+        "answer": "sometimes",
+        "score": 2
+      },
+      "C": {
+        "answer": "often",
+        "score": 3
+      },
+      "D": {
+        "answer": "almost always",
+        "score": 4
+      }
+    },
+    {
+      "id": 27,
+      "question": "I am “calm, cool, and collected”",
+      "class": "",
+      "A": {
+        "answer": "almost never",
+        "score": 1
+      },
+      "B": {
+        "answer": "sometimes",
+        "score": 2
+      },
+      "C": {
+        "answer": "often",
+        "score": 3
+      },
+      "D": {
+        "answer": "almost always",
+        "score": 4
+      }
+    },{
+      "id": 28,
+      "question": "I feel that difficulties are piling up so that I cannot overcome them",
+      "class": "",
+      "A": {
+        "answer": "almost never",
+        "score": 1
+      },
+      "B": {
+        "answer": "sometimes",
+        "score": 2
+      },
+      "C": {
+        "answer": "often",
+        "score": 3
+      },
+      "D": {
+        "answer": "almost always",
+        "score": 4
+      }
+    },
+    {
+      "id": 29,
+      "question": "I worry too much over something that really doesn’t matter",
+      "class": "",
+      "A": {
+        "answer": "almost never",
+        "score": 1
+      },
+      "B": {
+        "answer": "sometimes",
+        "score": 2
+      },
+      "C": {
+        "answer": "often",
+        "score": 3
+      },
+      "D": {
+        "answer": "almost always",
+        "score": 4
+      }
+    },
+    {
+      "id": 30,
+      "question": "I am happy",
+      "class": "",
+      "A": {
+        "answer": "almost never",
+        "score": 1
+      },
+      "B": {
+        "answer": "sometimes",
+        "score": 2
+      },
+      "C": {
+        "answer": "often",
+        "score": 3
+      },
+      "D": {
+        "answer": "almost always",
+        "score": 4
+      }
+    },
+    {
+      "id": 31,
+      "question": "I have disturbing thoughts",
+      "class": "",
+      "A": {
+        "answer": "almost never",
+        "score": 1
+      },
+      "B": {
+        "answer": "sometimes",
+        "score": 2
+      },
+      "C": {
+        "answer": "often",
+        "score": 3
+      },
+      "D": {
+        "answer": "almost always",
+        "score": 4
+      }
+    },
+    {
+      "id": 32,
+      "question": "I lack self-confidence",
+      "class": "",
+      "A": {
+        "answer": "almost never",
+        "score": 1
+      },
+      "B": {
+        "answer": "sometimes",
+        "score": 2
+      },
+      "C": {
+        "answer": "often",
+        "score": 3
+      },
+      "D": {
+        "answer": "almost always",
+        "score": 4
+      }
+    },
+    {
+      "id": 33,
+      "question": "I feel secure",
+      "class": "",
+      "A": {
+        "answer": "almost never",
+        "score": 1
+      },
+      "B": {
+        "answer": "sometimes",
+        "score": 2
+      },
+      "C": {
+        "answer": "often",
+        "score": 3
+      },
+      "D": {
+        "answer": "almost always",
+        "score": 4
+      }
+    },
+    {
+      "id": 34,
+      "question": "I make decisions easily",
+      "class": "",
+      "A": {
+        "answer": "almost never",
+        "score": 1
+      },
+      "B": {
+        "answer": "sometimes",
+        "score": 2
+      },
+      "C": {
+        "answer": "often",
+        "score": 3
+      },
+      "D": {
+        "answer": "almost always",
+        "score": 4
+      }
+    },
+    {
+      "id": 35,
+      "question": "I feel inadequate",
+      "class": "",
+      "A": {
+        "answer": "almost never",
+        "score": 1
+      },
+      "B": {
+        "answer": "sometimes",
+        "score": 2
+      },
+      "C": {
+        "answer": "often",
+        "score": 3
+      },
+      "D": {
+        "answer": "almost always",
+        "score": 4
+      }
+    },
+    {
+      "id": 36,
+      "question": "I am content",
+      "class": "",
+      "A": {
+        "answer": "almost never",
+        "score": 1
+      },
+      "B": {
+        "answer": "sometimes",
+        "score": 2
+      },
+      "C": {
+        "answer": "often",
+        "score": 3
+      },
+      "D": {
+        "answer": "almost always",
+        "score": 4
+      }
+    },
+    {
+      "id": 37,
+      "question": "Some unimportant thought runs through my mind and bothers me",
+      "class": "",
+      "A": {
+        "answer": "almost never",
+        "score": 1
+      },
+      "B": {
+        "answer": "sometimes",
+        "score": 2
+      },
+      "C": {
+        "answer": "often",
+        "score": 3
+      },
+      "D": {
+        "answer": "almost always",
+        "score": 4
+      }
+    },
+    {
+      "id": 38,
+      "question": "I take disappointments so keenly that I can’t put them out of my mind",
+      "class": "",
+      "A": {
+        "answer": "almost never",
+        "score": 1
+      },
+      "B": {
+        "answer": "sometimes",
+        "score": 2
+      },
+      "C": {
+        "answer": "often",
+        "score": 3
+      },
+      "D": {
+        "answer": "almost always",
+        "score": 4
+      }
+    },
+    {
+      "id": 39,
+      "question": "I am a steady person",
+      "class": "",
+      "A": {
+        "answer": "almost never",
+        "score": 1
+      },
+      "B": {
+        "answer": "sometimes",
+        "score": 2
+      },
+      "C": {
+        "answer": "often",
+        "score": 3
+      },
+      "D": {
+        "answer": "almost always",
+        "score": 4
+      }
+    },
+    {
+      "id": 40,
+      "question": "I get in a state of tension or turmoil as I think over my recent concerns and interests",
+      "class": "",
+      "A": {
+        "answer": "almost never",
+        "score": 1
+      },
+      "B": {
+        "answer": "sometimes",
+        "score": 2
+      },
+      "C": {
+        "answer": "often",
+        "score": 3
+      },
+      "D": {
+        "answer": "almost always",
+        "score": 4
+      }
+    }
+  ],
+  "answers": [
+    {"values": [0, 30],  "text": "low anxiety"},
+    {"values": [30, 45], "text": "moderate anxiety"},
+    {"values": [45, 0],  "text": "high anxiety"}
+  ]
+
+}

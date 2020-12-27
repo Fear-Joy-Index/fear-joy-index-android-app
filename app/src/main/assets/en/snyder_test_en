@@ -1,0 +1,145 @@
+{
+  "name": "Assessment of self-control in communication (M. Snyder)",
+  "type": "text",
+  "languarge": "en",
+  "questionCount": 10,
+  "description": "The test, developed by the American psychologist M. Snyder, is aimed at assessing self-control in communication",
+  "instruction": "Read carefully the ten sentences describing the reactions to some situations. Each of these you must evaluate as true or incorrect in relation to yourself",
+  "questions": [
+    {
+      "id": 1,
+      "question": "It seems difficult to me to imitate the habits of other people",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 0
+      },
+      "B": {
+        "answer": "False",
+        "score": 1
+      }
+    },
+    {
+      "id": 2,
+      "question": " I could, perhaps, fool around to attract attention or amuse others!",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 3,
+      "question": "A good actor could come out of me",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 4,
+      "question": " Other people sometimes feel that I'm experiencing something more deeply than it really is",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "Не",
+        "score": 0
+      }
+    },
+    {
+      "id": 5,
+      "question": "In the company, I rarely find myself in the spotlight",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 0
+      },
+      "B": {
+        "answer": "False",
+        "score": 1
+      }
+    },
+    {
+      "id": 6,
+      "question": "In different situations and in dealing with different people, I often behave quite differently",
+      "class": "",
+      "A": {
+        "answer": "Редко",
+        "score": 1
+      },
+      "B": {
+        "answer": "Иногда",
+        "score": 0
+      }
+    },
+    {
+      "id": 7,
+      "question": "I can defend only what I am sincerely convinced",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 0
+      },
+      "B": {
+        "answer": "False",
+        "score": 1
+      }
+    },{
+      "id": 8,
+      "question": "To succeed in business and in relationships with people, I try to be what I'm expected to see",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 9,
+      "question": "I can be friendly with people I can not stand",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "Не",
+        "score": 0
+      }
+    },
+    {
+      "id": 10,
+      "question": "I'm not always what I seem",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 0
+      },
+      "B": {
+        "answer": "Не",
+        "score": 1
+      }
+    }
+  ],
+  "answers": [
+    {"values": [0, 3], "text": "You have low communication control. Your behavior is stable, and you do not feel it necessary to change depending on situations. You are capable of sincere self-disclosure in communication. Some people consider you uncomfortable in communication because of your straightforwardness"},
+    {"values": [4, 6], "text": " You have an average communicative control. You are sincere, but not restrained in your emotional manifestations, but in your behavior you are considered with surrounding people"},
+    {"values": [7, 10],"text": " You have high communication control. You easily enter any role, flexibly react to the change in the situation, feel well and even be able to foresee the impression that you make on others"}
+  ]
+
+}

@@ -4,7 +4,7 @@
     <string name="title_statistic">Settings</string>
     <string name="title_tests">Tests</string>
     <string name="test_start">Start</string>
-    <string name="test_end">Back to tests</string>
+    <string name="test_end">Back to Map</string>
     <string name="test_ryakhovsky">Ryakhovsky test</string>
     <string name="test_zung">Zung Self-Rating Depression Scale (SDS)</string>
     <string name="test_snyder">Assessment of self-control in communication (M. Snyder)</string>
@@ -15,4 +15,8 @@
     <string name="test_sheehan">Sheehan Patient-Rated Anxiety Scale, SPRAS</string>
     <string name="test_spilberg">The Spielberger State-Trait Anxiety Inventory (STAI)</string>
     <string name="test_taylor">Taylor\'s anxiety measurement technique</string>
+    <string name="bt_lang">Language</string>
+    <string name="lng_eng">English</string>
+    <string name="lng_rus">Русский</string>
+    <string name="title_start">How is your day?</string>
 </resources>
