@@ -1,0 +1,665 @@
+{
+  "name": "Методика измерения уровня тревожности Тейлора",
+  "type": "text",
+  "language": "ru",
+  "questionCount": 50,
+  "description": "The questionnaire for assessing the level of Taylor's anxiety (adapted by T. A. Nemchinov) consists of 50 statements.",
+  "instruction": "The questionnaire consists of 50 statements. Mark the statements you agree with",
+  "questions": [
+    {
+      "id": 1,
+      "question": "I do not tire quickly.",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 0
+      },
+      "B": {
+        "answer": "False",
+        "score": 1
+      }
+    },
+    {
+      "id": 2,
+      "question": "I am troubled by attacks of nausea",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 0
+      },
+      "B": {
+        "answer": "False",
+        "score": 1
+      }
+    },
+    {
+      "id": 3,
+      "question": "I believe I am no more nervous than most others",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 0
+      },
+      "B": {
+        "answer": "False",
+        "score": 1
+      }
+    },
+    {
+      "id": 4,
+      "question": "I have very few headaches",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 0
+      },
+      "B": {
+        "answer": "False",
+        "score": 1
+      }
+    },
+    {
+      "id": 5,
+      "question": "I work under a great deal of tension",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 0
+      },
+      "B": {
+        "answer": "False",
+        "score": 1
+      }
+    },
+    {
+      "id": 6,
+      "question": "I cannot keep my mind on one thing",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 0
+      },
+      "B": {
+        "answer": "False",
+        "score": 1
+      }
+    },
+    {
+      "id": 7,
+      "question": "I worry over money and business",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 0
+      },
+      "B": {
+        "answer": "False",
+        "score": 1
+      }
+    },{
+      "id": 8,
+      "question": "I frequently notice my hand shakes when I try to do something",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 0
+      },
+      "B": {
+        "answer": "False",
+        "score": 1
+      }
+    },
+    {
+      "id": 9,
+      "question": "I blush no more often than others",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 0
+      },
+      "B": {
+        "answer": "False",
+        "score": 1
+      }
+    },
+    {
+      "id": 10,
+      "question": "I have diarrhea once a month or more",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 0
+      },
+      "B": {
+        "answer": "False",
+        "score": 1
+      }
+    },
+    {
+      "id": 11,
+      "question": "I worry quite a bit over possible misfortunes",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 0
+      },
+      "B": {
+        "answer": "False",
+        "score": 1
+      }
+    },
+    {
+      "id": 12,
+      "question": "I practically never blush",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 0
+      },
+      "B": {
+        "answer": "False",
+        "score": 1
+      }
+    },
+    {
+      "id": 13,
+      "question": "I am often afraid that I am going to blush",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 0
+      },
+      "B": {
+        "answer": "False",
+        "score": 1
+      }
+    },
+    {
+      "id": 14,
+      "question": "I have nightmares every few nights",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 15,
+      "question": "My hands and feet are usually warm",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 16,
+      "question": "I sweat very easily even on cool days",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 17,
+      "question": "Sometimes when embarrassed, I break out in a sweat",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 18,
+      "question": "I hardly ever notice my heart pounding and I am seldom short of breath",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 19,
+      "question": "I feel hungry almost all the time",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 20,
+      "question": "I am very seldom troubled by constipation",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 21,
+      "question": "I have a great deal of stomach trouble",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 22,
+      "question": "I have had periods in which I lost sleep over worry",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 23,
+      "question": "My sleep is fitful and disturbed",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 24,
+      "question": "I dream frequently about things that are best kept to myself",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 25,
+      "question": "I am easily embarrassed",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 26,
+      "question": "I am more sensitive than most other people",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },{
+      "id": 27,
+      "question": "I frequently find myself worrying about something",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 28,
+      "question": "I wish I could be as happy as others seem to be",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 29,
+      "question": "I am usually calm and not easily upset",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 30,
+      "question": "I cry easily",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 31,
+      "question": "I feel anxiety about something or someone almost all the time",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 32,
+      "question": "I am happy most of the time",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 33,
+      "question": "It makes me nervous to have to wait",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 34,
+      "question": "I have periods of such great restlessness that I cannot sit long I a chair",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 35,
+      "question": "Sometimes I become so excited that I find it hard to get to sleep",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 36,
+      "question": "I have sometimes felt that difficulties were piling up so high that I could not overcome them",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 37,
+      "question": "I must admit that I have at times been worried beyond reason over something that really did not matter",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 38,
+      "question": "I have very few fears compared to my friends",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 39,
+      "question": "I have been afraid of things or people that I know could not hurt me",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 40,
+      "question": "I certainly feel useless at times",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 41,
+      "question": "I find it hard to keep my mind on a task or job",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 42,
+      "question": "I am usually self-conscious",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 43,
+      "question": "I am inclined to take things hard",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 44,
+      "question": "I am a high-strung person",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 45,
+      "question": "Life is a strain for me much of the time",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 46,
+      "question": "At times I think I am no good at all",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 47,
+      "question": "I am certainly lacking in self-confidence",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 48,
+      "question": "I sometimes feel that I am about to go to pieces",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 49,
+      "question": "I shrink from facing crisis or difficulty",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    },
+    {
+      "id": 50,
+      "question": "I am entirely self-confident",
+      "class": "",
+      "A": {
+        "answer": "True",
+        "score": 1
+      },
+      "B": {
+        "answer": "False",
+        "score": 0
+      }
+    }],
+  "answers": [
+    {"values": [0, 4],  "text": "low alarm level"},
+    {"values": [6, 15], "text": "medium (with a tendency to low) level"},
+    {"values": [16, 25],"text": "average (with a tendency to high) level"},
+    {"values": [26, 40],"text": "high levels of anxiety"},
+    {"values": [41, 50],"text": "very high levels of anxiety"}
+  ]
+
+}

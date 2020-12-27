@@ -1,0 +1,888 @@
+{
+  "name": "Sheehan patient ratet anxiety scale",
+  "type": "text",
+  "languarge": "en",
+  "questionCount": 35,
+  "description": "",
+  "instruction": "During the past week, how much did you suffer from ... (Check only one answer for each question)",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Difficulty in getting your breath, smothering, or overbreathing ",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 2,
+      "question": "Choking sensation or lump in throat",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 3,
+      "question": "Skipping, racing, or pounding of your heart",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 4,
+      "question": "Chest pain, pressure, or discomfort",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 5,
+      "question": "Bouts of excessive sweating",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 6,
+      "question": "Faintness, light-headedness, or dizzy spells",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 7,
+      "question": "Sensation of rubbery or “jelly” legs",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },{
+      "id": 8,
+      "question": "Feeling off balance or unsteady like you might fall",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 9,
+      "question": "Nausea or stomach problems",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 10,
+      "question": " Feeling that things around you are strange, unreal, foggy, or detached from you",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 11,
+      "question": "Feeling outside or detached from part or all of your body, or a floating feeling",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 12,
+      "question": "Tingling or numbness in pans of your body",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 13,
+      "question": "Hot flashes or cold chills",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 14,
+      "question": "Shaking or trembling",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 15,
+      "question": "Having a fear that you are dying or that something terrible is about to happen",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 16,
+      "question": " Feeling you are losing control or going insane",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 17,
+      "question": "Sudden anxiety attacks with three or more of the symptoms (listed above) that occur when you are in or about to go into a situation that is likely, from your experience, to bring on an attack",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 18,
+      "question": " Sudden unexpected anxiety attacks with three or more symptoms (listed above) that occur with little or no provocation (i.e., when you are NOT in a situation that is likely, from your experience, to bring on an attack)",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 19,
+      "question": "Sudden unexpected spells with only one or two symptoms (listed above) that occur with little or no provocation (i.e., when you are NOT in a situation that is likely, from your experience, to bring on an attack)",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 20,
+      "question": "Anxiety episodes that build up as you anticipate doing something that is likely, from your experience, to bring on anxiety that is more intense than most people experience in such situations",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 21,
+      "question": "Avoiding situations because they frighten you",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 22,
+      "question": "Being dependent on others",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 23,
+      "question": "Tension and inability to relax",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 24,
+      "question": "Anxiety, nervousness, restlessness",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 25,
+      "question": "Spells of increased sensitivity to sound, light, or touch",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 26,
+      "question": "Attacks of diarrhea",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 27,
+      "question": "Worrying about your health too much",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },{
+      "id": 28,
+      "question": "Feeling tired, weak, and exhausted easily",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 29,
+      "question": " Headaches or pains in neck or head",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 30,
+      "question": "Difficulty in falling asleep",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 31,
+      "question": "Waking in the middle of the night, or restless sleep",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 32,
+      "question": "Unexpected waves of depression occurring with little or no provocation ",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 33,
+      "question": "Emotions and moods going up and down a lot in response to changes around you",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 34,
+      "question": "Recurrent and persistent ideas, thoughts, impulses, or images that are intrusive, unwanted, senseless, or repugnant.",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    },
+    {
+      "id": 35,
+      "question": "Having to repeat the same action in a ritual, e.g. checking, washing, counting repeatedly, when it’s not really necessary",
+      "class": "",
+      "A": {
+        "answer": "Not at All",
+        "score": 0
+      },
+      "B": {
+        "answer": "Little",
+        "score": 1
+      },
+      "C": {
+        "answer": "Moderately",
+        "score": 2
+      },
+      "D": {
+        "answer": "Quite a Bit",
+        "score": 3
+      },
+      "E": {
+        "answer": "Extremely",
+        "score": 4
+      }
+    }],
+  "answers": [
+    {"values": [0, 20],  "text": "normal level of anxiety"},
+    {"values": [30, 80], "text": "abnormal level of anxiety"},
+    {"values": [80, 0],  "text": "high level of anxiety"}
+  ]
+
+}

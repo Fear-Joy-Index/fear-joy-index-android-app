@@ -2,7 +2,6 @@ package ru.nsu.fit.joyandfear.ui.tests.test_2;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -20,7 +19,6 @@ import java.util.List;
 import ru.nsu.fit.joyandfear.R;
 import ru.nsu.fit.joyandfear.ui.tests.EndActivity;
 import ru.nsu.fit.joyandfear.ui.tests.question_item.QuestionItem2;
-import ru.nsu.fit.joyandfear.ui.tests.question_item.QuestionItem3;
 
 public class TaylorActivity extends AppCompatActivity {
 
@@ -37,6 +35,11 @@ public class TaylorActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_2);
+
+        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+            getSupportActionBar().setTitle("Методика измерения уровня тревожности Тейлора");
+        if (getResources().getConfiguration().locale.getLanguage().equals("en"))
+            getSupportActionBar().setTitle("Taylor's anxiety measurement technique");
 
         question = findViewById(R.id.question_view);
         button_A = findViewById(R.id.button_A);
@@ -57,19 +60,35 @@ public class TaylorActivity extends AppCompatActivity {
             } else {
                 Intent intent = new Intent(getApplicationContext(), EndActivity.class);
 
-                if ((points >= 0) && (points <= 5))
-                    intent.putExtra("result", "У вас низкий уровень тревоги");
-                else
-                if ((points >= 6) && (points <= 15))
-                    intent.putExtra("result", "У вас средний (с тенденцией к низкому) уровень тревоги");
-                else
-                if ((points >= 16) && (points <= 25))
-                    intent.putExtra("result", "У вас средний (с тенденцией к высокому) уровень тревоги");
-                else
-                if ((points >= 26) && (points <= 40))
-                    intent.putExtra("result", "У вас высокий уровень тревоги");
-                else
-                    intent.putExtra("result", "У вас очень высокий уровень тревоги");
+                if ((points >= 0) && (points <= 5)) {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "У вас низкий уровень тревоги");
+                    else
+                        intent.putExtra("result", "Low alarm level");
+                }else
+                if ((points >= 6) && (points <= 15)) {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "У вас средний (с тенденцией к низкому) уровень тревоги");
+                    else
+                        intent.putExtra("result", "Medium (with a tendency to low) level");
+                }else
+                if ((points >= 16) && (points <= 25)) {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "У вас средний (с тенденцией к высокому) уровень тревоги");
+                    else
+                        intent.putExtra("result", "Average (with a tendency to high) level");
+                }else
+                if ((points >= 26) && (points <= 40)) {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "У вас высокий уровень тревоги");
+                    else
+                        intent.putExtra("result", "High levels of anxiety");
+                }else {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "У вас очень высокий уровень тревоги");
+                    else
+                        intent.putExtra("result", "Very high levels of anxiety");
+                }
                 startActivity(intent);
                 finish();
             }
@@ -115,8 +134,14 @@ public class TaylorActivity extends AppCompatActivity {
     private void loadAllQuestions(){
         questionItem2s = new ArrayList<>();
 
+        String jsonStr;
         //load all questions into json string
-        String jsonStr = loadJSONFromAssert("taylor_test");
+        if (getResources().getConfiguration().locale.getLanguage().equals("ru")){
+            jsonStr = loadJSONFromAssert("ru/taylor_test");
+        }
+        else {
+            jsonStr = loadJSONFromAssert("en/taylor_test_en");
+        }
 
         //load all data into list
         try{

@@ -15,6 +15,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import ru.nsu.fit.joyandfear.R;
 import ru.nsu.fit.joyandfear.ui.tests.EndActivity;
@@ -36,6 +37,11 @@ public class SnyderActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_2);
 
+        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+            getSupportActionBar().setTitle("Тест на оценку самоконтроля в общении (М. Снайдер)");
+        if (getResources().getConfiguration().locale.getLanguage().equals("en"))
+            getSupportActionBar().setTitle("Assessment of self-control in communication (M. Snyder)");
+
         question = findViewById(R.id.question_view);
         button_A = findViewById(R.id.button_A);
         button_B = findViewById(R.id.button_B);
@@ -55,13 +61,22 @@ public class SnyderActivity extends AppCompatActivity {
             } else {
                 Intent intent = new Intent(getApplicationContext(), EndActivity.class);
 
-                if ((points >= 0) && (points <= 3))
-                    intent.putExtra("result", "У Вас низкий коммуникативный контроль. Ваше поведение устойчиво, и Вы не считаете нужным изменяться в зависимости от ситуаций. Вы способны к искреннему самораскрытию в общении. Некоторые считают Вас неудобным в общении по причине вашей прямолинейности.");
-                else
-                if ((points >= 4) && (points <= 6))
-                    intent.putExtra("result", "У Вас средний коммуникативный контроль, вы искренни, но не сдержанны в своих эмоциональных проявлениях, считаетесь в своем поведении с окружающими людьми.");
-                else
-                    intent.putExtra("result", "У вас депрессивное расстройство средней степени тяжести.");
+                if ((points >= 0) && (points <= 3)) {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "У Вас низкий коммуникативный контроль. Ваше поведение устойчиво, и Вы не считаете нужным изменяться в зависимости от ситуаций. Вы способны к искреннему самораскрытию в общении. Некоторые считают Вас неудобным в общении по причине вашей прямолинейности.");
+                    else
+                        intent.putExtra("result", "You have low communication control. Your behavior is stable, and you do not feel it necessary to change depending on situations. You are capable of sincere self-disclosure in communication. Some people consider you uncomfortable in communication because of your straightforwardness.");
+                }else if ((points >= 4) && (points <= 6)){
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "У Вас средний коммуникативный контроль, вы искренни, но не сдержанны в своих эмоциональных проявлениях, считаетесь в своем поведении с окружающими людьми.");
+                    else
+                        intent.putExtra("result", "You have an average communicative control. You are sincere, but not restrained in your emotional manifestations, but in your behavior you are considered with surrounding people.");
+                }else{
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "У вас депрессивное расстройство средней степени тяжести.");
+                    else
+                        intent.putExtra("result", "You have high communication control. You easily enter any role, flexibly react to the change in the situation, feel well and even be able to foresee the impression that you make on others.");
+                }
 
                 startActivity(intent);
                 finish();
@@ -77,13 +92,22 @@ public class SnyderActivity extends AppCompatActivity {
             } else {
                 Intent intent = new Intent(getApplicationContext(), EndActivity.class);
 
-                if ((points >= 0) && (points <= 3))
-                    intent.putExtra("result", "У Вас низкий коммуникативный контроль. Ваше поведение устойчиво, и Вы не считаете нужным изменяться в зависимости от ситуаций. Вы способны к искреннему самораскрытию в общении. Некоторые считают Вас неудобным в общении по причине вашей прямолинейности.");
-                else
-                if ((points >= 4) && (points <= 6))
-                    intent.putExtra("result", "У Вас средний коммуникативный контроль, вы искренни, но не сдержанны в своих эмоциональных проявлениях, считаетесь в своем поведении с окружающими людьми.");
-                else
-                    intent.putExtra("result", "У вас депрессивное расстройство средней степени тяжести.");
+                if ((points >= 0) && (points <= 3)) {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "У Вас низкий коммуникативный контроль. Ваше поведение устойчиво, и Вы не считаете нужным изменяться в зависимости от ситуаций. Вы способны к искреннему самораскрытию в общении. Некоторые считают Вас неудобным в общении по причине вашей прямолинейности.");
+                    else
+                        intent.putExtra("result", "You have low communication control. Your behavior is stable, and you do not feel it necessary to change depending on situations. You are capable of sincere self-disclosure in communication. Some people consider you uncomfortable in communication because of your straightforwardness.");
+                }else if ((points >= 4) && (points <= 6)){
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "У Вас средний коммуникативный контроль, вы искренни, но не сдержанны в своих эмоциональных проявлениях, считаетесь в своем поведении с окружающими людьми.");
+                        else
+                            intent.putExtra("result", "You have an average communicative control. You are sincere, but not restrained in your emotional manifestations, but in your behavior you are considered with surrounding people.");
+                }else{
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "У вас депрессивное расстройство средней степени тяжести.");
+                    else
+                        intent.putExtra("result", "You have high communication control. You easily enter any role, flexibly react to the change in the situation, feel well and even be able to foresee the impression that you make on others.");
+                }
 
                 startActivity(intent);
                 finish();
@@ -101,9 +125,14 @@ public class SnyderActivity extends AppCompatActivity {
 
     private void loadAllQuestions(){
         questionItem2s = new ArrayList<>();
-
+        String jsonStr;
         //load all questions into json string
-        String jsonStr = loadJSONFromAssert("snyder_test");
+        if (getResources().getConfiguration().locale.getLanguage().equals("ru")){
+            jsonStr = loadJSONFromAssert("ru/snyder_test");
+        }
+        else {
+            jsonStr = loadJSONFromAssert("en/snyder_test_en");
+        }
 
         //load all data into list
         try{

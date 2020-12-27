@@ -12,10 +12,10 @@
         tools:layout="@layout/fragment_map" />
 
     <fragment
-        android:id="@+id/navigation_statistic"
-        android:name="ru.nsu.fit.joyandfear.ui.statistic.StatisticFragment"
+        android:id="@+id/navigation_settings"
+        android:name="ru.nsu.fit.joyandfear.ui.settings.SettingsFragment"
         android:label="@string/title_statistic"
-        tools:layout="@layout/fragment_statistic" />
+        tools:layout="@layout/fragment_settings" />
 
     <fragment
         android:id="@+id/navigation_tests"

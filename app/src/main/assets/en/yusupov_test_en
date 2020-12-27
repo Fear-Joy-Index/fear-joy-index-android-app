@@ -1,0 +1,1097 @@
+{
+  "name": "Test Yusupov empathy",
+  "type": "text",
+  "language": "en",
+  "questionCount": 35,
+  "description": "Research on the level of empathic tendencies",
+  "instruction": "Rate the proposed statements on a five-point scale.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "I like travel books more than books from the Life of Wonderful People series",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 2,
+      "question": "Adult children are annoyed by parental concerns",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 3,
+      "question": "I like to reflect on the reasons for the success and failure of other people",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 4,
+      "question": "Among all musical programs I prefer programs about modern music",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 5,
+      "question": "Excessive irritability and unfair reproaches from the patient must be tolerated, even if they continue for years",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 6,
+      "question": "Even a word can help a sick person",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 7,
+      "question": "Outsiders should not interfere with a conflict between two persons",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },{
+      "id": 8,
+      "question": "Old people tend to be touchy for no reason",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 9,
+      "question": "When I listened to a sad story as a child, tears came to my eyes",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 10,
+      "question": "My parents' irritation affects my mood",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 11,
+      "question": "I am indifferent to criticism addressed to me",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 12,
+      "question": "I like to view portraits more than landscape paintings",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 13,
+      "question": "I have always forgiven everything to my parents, even if they were wrong",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 14,
+      "question": "If the horse does not pull well, it should be whipped",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 15,
+      "question": "When I read about dramatic events in people's lives, I feel like it’s happening with me",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 16,
+      "question": "Parents treat their children fairly",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 17,
+      "question": "Seeing adolescents or adults quarreling, I interfere",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 18,
+      "question": "I don't pay attention to my parents' bad mood",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 19,
+      "question": "I watch the behavior of animals for a long time, putting off other things",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 20,
+      "question": "Films and books can only bring tears to frivolous people",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 21,
+      "question": "I like to observe the expressions and behavior of strangers",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 22,
+      "question": "I used to bring cats and dogs home as a kid",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 23,
+      "question": "All people are unreasonably angry",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 24,
+      "question": "Looking at a stranger, I want to guess how his life will turn out",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 25,
+      "question": "As a child, the younger ones followed me along",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 26,
+      "question": "When I see a crippled animal, I try to help him with something",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 27,
+      "question": "A person will get tired more easily if you listen carefully to his complaints",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 28,
+      "question": "After seeing a street incident, I try not to be among the witnesses",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 29,
+      "question": "The younger ones like it when I offer them my idea, business or entertainment",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 30,
+      "question": "Humans exaggerate the ability of animals to sense the mood of their owners",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 31,
+      "question": "A person must get out of a difficult conflict situation on his own",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 32,
+      "question": "If a child cries, there are reasons for that",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 33,
+      "question": "Young people should satisfy any requests and eccentricities of the elderly",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 34,
+      "question": "I wanted to figure out why some of my classmates were sometimes thoughtful",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 35,
+      "question": "Stray pets should be caught and destroyed",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    },
+    {
+      "id": 36,
+      "question": "If my friends start discussing their personal problems with me, I try to turn the conversation to another topic",
+      "class": "",
+      "A": {
+        "answer": "I don't know",
+        "score": 0
+      },
+      "B": {
+        "answer": "no, never",
+        "score": 1
+      },
+      "C": {
+        "answer": "sometimes",
+        "score": 2
+      },
+
+      "D": {
+        "answer": "often",
+        "score": 3
+      },
+      "E": {
+        "answer": "almost always",
+        "score": 4
+      },
+      "F": {
+        "answer": "Yes always",
+        "score": 5
+      }
+    }
+  ],
+  "answers": [
+    {"values": [82, 90], "text": "very high level of empathy. You have a morbidly developed empathy. In communication, as a barometer, you subtly react to the mood of the interlocutor, who has not yet managed to say a word. It is difficult for you because others use you as a lightning rod, bringing down an emotional state on you. You feel bad in the presence of 'heavy' people. Adults and children are willing to trust you with their secrets and go for advice. Often you experience a guilt complex, fearing to cause trouble to people; not only with a word, but even with a look, you are afraid to hurt them. At the same time, they are very vulnerable. You can suffer at the sight of a crippled animal or not find a place for yourself from the occasional cold greeting of your boss. Your impressionability sometimes does not allow you to fall asleep for a long time. Being upset, you need emotional support from the outside. With this attitude to life, you are close to neurotic breakdowns. Worry about your mental health."},
+    {"values": [63, 81], "text": "high empathy. You are sensitive to the needs and problems of others, generous, and tend to forgive them a lot. Treat people with genuine interest. You like to 'read' their faces and 'look' into their future, you are emotionally responsive, sociable, quickly establish contacts with others and find a common language. The children must be drawn to you, too. Others appreciate your sincerity. You try to avoid conflicts and find compromise solutions. Take criticism well. In the assessment of events and more in touch with their feelings and intuition than analytical conclusions. You prefer to work with people rather than alone. You constantly need social approval for your actions. With all these qualities, you are not always accurate in accurate and painstaking work. It is not worth much effort you lead you out of balance"},
+    {"values": [37, 62], "text": "normal level of empathy, inherent in the vast majority of people. Others may not call you 'thick-skinned', but at the same time you do not belong to the number of particularly sensitive persons. In interpersonal relationships, people are more likely to judge others by their actions than to trust their personal impressions. You are no stranger to emotional manifestations, but most of them are under self-control. In communication, you are attentive, try to understand more than what is said in words, but if you are too influenced by the feelings of the interlocutor, you lose patience. You prefer not to Express your point of view delicately, without being sure that it will be accepted. When reading fiction and watching movies, follow the action more often than the experiences of the characters. You find it difficult to predict the development of relationships between people, so it happens that their actions are unexpected for you. You have no looseness of feeling, and this interferes with your full perception of people."},
+    {"values": [12, 46], "text": "low level of empathy. You have difficulties in establishing contacts with mica, you feel uncomfortable in a large company. Emotional manifestations in the actions of others sometimes seem incomprehensible and meaningless to You. You prefer to do a specific thing in private, rather than work with people. You are a proponent of precise formulations and rational solutions. You probably have few friends, and of those who do, you value more for business qualities and a clear mind than for sensitivity and responsiveness. People pay you the same. Sometimes, when you feel alienated, others do not give you too much attention. But this can be corrected if you open your shell and begin to look more closely at the behavior of your loved ones and accept their problems as your own."},
+    {"values": [0, 11],  "text": "very low level. The empathic tendencies of the individual are undeveloped. If you find it difficult to start a conversation first, keep to yourself among your colleagues. Especially difficult are contacts with children and people who are much older than you. In interpersonal relationships, you often find yourself in an awkward position. In many ways, you do not find mutual understanding with others. You like thrills, you prefer sports to art. They are too self-centered in their activities. You can be very productive in individual work, but when you interact with others, you don't always look in the best light. Painfully transfer criticism to your address, although you can not react violently to it. It is necessary to exercise the senses."}
+  ]
+
+}

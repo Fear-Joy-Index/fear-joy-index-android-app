@@ -16,6 +16,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import ru.nsu.fit.joyandfear.R;
 import ru.nsu.fit.joyandfear.ui.tests.EndActivity;
@@ -36,6 +37,11 @@ public class SpilbergActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_4);
+
+        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+            getSupportActionBar().setTitle("Шкала самооценки тревоги Спилбера-Ханина");
+        if (getResources().getConfiguration().locale.getLanguage().equals("en"))
+            getSupportActionBar().setTitle("The Spielberger State-Trait Anxiety Inventory (STAI)");
 
         question = findViewById(R.id.question_view);
         button_A = findViewById(R.id.button_A);
@@ -60,13 +66,23 @@ public class SpilbergActivity extends AppCompatActivity {
                 } else {
                     Intent intent = new Intent(getApplicationContext(), EndActivity.class);
 
-                    if ((points >= 0) && (points <= 30))
-                        intent.putExtra("result", "Низкая тревожность");
-                    else
-                    if ((points > 30) && (points <= 45))
-                        intent.putExtra("result", "Умеренная тревожность");
-                    else
-                        intent.putExtra("result", "Высокая тревожность");
+                    if ((points >= 0) && (points <= 30)) {
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "Низкая тревожность");
+                        else
+                            intent.putExtra("result", "Low anxiety");
+                    }else
+                    if ((points > 30) && (points <= 45)) {
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "Умеренная тревожность");
+                        else
+                            intent.putExtra("result", "Moderate anxiety");
+                    }else {
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "Высокая тревожность");
+                        else
+                            intent.putExtra("result", "High anxiety");
+                    }
 
                     startActivity(intent);
                     finish();
@@ -85,13 +101,23 @@ public class SpilbergActivity extends AppCompatActivity {
                 } else {
                     Intent intent = new Intent(getApplicationContext(), EndActivity.class);
 
-                    if ((points >= 0) && (points <= 30))
-                        intent.putExtra("result", "Низкая тревожность");
-                    else
-                    if ((points > 30) && (points <= 45))
-                        intent.putExtra("result", "Умеренная тревожность");
-                    else
-                        intent.putExtra("result", "Высокая тревожность");
+                    if ((points >= 0) && (points <= 30)) {
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "Низкая тревожность");
+                        else
+                            intent.putExtra("result", "Low anxiety");
+                    }else
+                    if ((points > 30) && (points <= 45)) {
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "Умеренная тревожность");
+                        else
+                            intent.putExtra("result", "Moderate anxiety");
+                    }else {
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "Высокая тревожность");
+                        else
+                            intent.putExtra("result", "High anxiety");
+                    }
 
                     startActivity(intent);
                     finish();
@@ -111,13 +137,23 @@ public class SpilbergActivity extends AppCompatActivity {
                 } else {
                     Intent intent = new Intent(getApplicationContext(), EndActivity.class);
 
-                    if ((points >= 0) && (points <= 30))
-                        intent.putExtra("result", "Низкая тревожность");
-                    else
-                    if ((points > 30) && (points <= 45))
-                        intent.putExtra("result", "Умеренная тревожность");
-                    else
-                        intent.putExtra("result", "Высокая тревожность");
+                    if ((points >= 0) && (points <= 30)) {
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "Низкая тревожность");
+                        else
+                            intent.putExtra("result", "Low anxiety");
+                    }else
+                    if ((points > 30) && (points <= 45)) {
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "Умеренная тревожность");
+                        else
+                            intent.putExtra("result", "Moderate anxiety");
+                    }else {
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "Высокая тревожность");
+                        else
+                            intent.putExtra("result", "High anxiety");
+                    }
 
                     startActivity(intent);
                     finish();
@@ -137,13 +173,23 @@ public class SpilbergActivity extends AppCompatActivity {
                 } else {
                     Intent intent = new Intent(getApplicationContext(), EndActivity.class);
 
-                    if ((points >= 0) && (points <= 30))
-                        intent.putExtra("result", "Низкая тревожность");
-                    else
-                    if ((points > 30) && (points <= 45))
-                        intent.putExtra("result", "Умеренная тревожность");
-                    else
-                        intent.putExtra("result", "Высокая тревожность");
+                    if ((points >= 0) && (points <= 30)) {
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "Низкая тревожность");
+                        else
+                            intent.putExtra("result", "Low anxiety");
+                    }else
+                    if ((points > 30) && (points <= 45)) {
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "Умеренная тревожность");
+                        else
+                            intent.putExtra("result", "Moderate anxiety");
+                    }else {
+                        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                            intent.putExtra("result", "Высокая тревожность");
+                        else
+                            intent.putExtra("result", "High anxiety");
+                    }
 
                     startActivity(intent);
                     finish();
@@ -163,9 +209,12 @@ public class SpilbergActivity extends AppCompatActivity {
 
     private void loadAllQuestions(){
         questionItem4s = new ArrayList<>();
-
+        String jsonStr;
         //load all questions into json string
-        String jsonStr = loadJSONFromAssert("spilberg_test");
+        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+            jsonStr = loadJSONFromAssert("ru/spilberg_test");
+        else
+            jsonStr = loadJSONFromAssert("en/spilberg_test_en");
 
         //load all data into list
         try{

@@ -5,7 +5,7 @@
     <string name="title_tests">Тесты</string>
     <string name="title_statistic">Настройки</string>
     <string name="test_start">Начать</string>
-    <string name="test_end">Вернуться к тестам</string>
+    <string name="test_end">Вернуться к Карте</string>
     <string name="test_ryakhovsky">Тест на уровень общительности Ряховского</string>
     <string name="test_zung">Шкала Зунга</string>
     <string name="test_snyder">Тест на оценку самоконтроля в общении (М. Снайдер)</string>
@@ -16,4 +16,8 @@
     <string name="test_sheehan">Шкала самооценки тревоги Шихана</string>
     <string name="test_spilberg">Шкала самооценки тревоги Спилбера-Ханина</string>
     <string name="test_taylor">Методика измерения уровня тревожности Тейлора</string>
+    <string name="bt_lang">Язык</string>
+    <string name="lng_eng">English</string>
+    <string name="lng_rus">Русский</string>
+    <string name="title_start">Как проходит ваш день?</string>
 </resources>

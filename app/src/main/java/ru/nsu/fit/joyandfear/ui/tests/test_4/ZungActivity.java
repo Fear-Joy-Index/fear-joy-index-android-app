@@ -16,8 +16,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import ru.nsu.fit.joyandfear.R;
+import ru.nsu.fit.joyandfear.ui.settings.SettingsFragment;
 import ru.nsu.fit.joyandfear.ui.tests.EndActivity;
 import ru.nsu.fit.joyandfear.ui.tests.question_item.QuestionItem4;
 
@@ -35,7 +37,13 @@ public class ZungActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_test_4);
+
+        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+            getSupportActionBar().setTitle("Шкала Зунга");
+        if (getResources().getConfiguration().locale.getLanguage().equals("en"))
+            getSupportActionBar().setTitle("Zung Self-Rating Depression Scale (SDS)");
 
         question = findViewById(R.id.question_view);
         button_A = findViewById(R.id.button_A);
@@ -58,17 +66,27 @@ public class ZungActivity extends AppCompatActivity {
             } else {
                 Intent intent = new Intent(getApplicationContext(), EndActivity.class);
 
-                if ((points >= 20) && (points <= 49))
-                    intent.putExtra("result", "Нормальное состояние");
-                else
-                    if ((points >= 50) && (points <= 59))
+                if ((points >= 20) && (points <= 49)) {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "Нормальное состояние");
+                    else
+                        intent.putExtra("result", "Normal Range");
+                }else if ((points >= 50) && (points <= 59)) {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
                         intent.putExtra("result", "Легкое депрессивное расстройство");
                     else
-                        if ((points >= 60) && (points <= 69))
-                            intent.putExtra("result", "Депрессивное расстройство средней степени тяжести");
-                        else
-                            intent.putExtra("result", "Депрессивное расстройство  тяжелой степени тяжести");
-
+                        intent.putExtra("result", "Mildly Depressed");
+                }else if ((points >= 60) && (points <= 69)) {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "Депрессивное расстройство средней степени тяжести");
+                    else
+                        intent.putExtra("result", "Moderately Depressed");
+                }else {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "Депрессивное расстройство  тяжелой степени тяжести");
+                    else
+                        intent.putExtra("result", "Severely Depressed");
+                        }
                 startActivity(intent);
                 finish();
             }
@@ -83,75 +101,100 @@ public class ZungActivity extends AppCompatActivity {
             } else {
                 Intent intent = new Intent(getApplicationContext(), EndActivity.class);
 
-                if ((points >= 20) && (points <= 49))
-                    intent.putExtra("result", "Нормальное состояние");
-                else
-                if ((points >= 50) && (points <= 59))
-                    intent.putExtra("result", "Легкое депрессивное расстройство");
-                else
-                if ((points >= 60) && (points <= 69))
-                    intent.putExtra("result", "Депрессивное расстройство средней степени тяжести");
-                else
-                    intent.putExtra("result", "Депрессивное расстройство  тяжелой степени тяжести");
-
+                if ((points >= 20) && (points <= 49)) {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "Нормальное состояние");
+                    else
+                        intent.putExtra("result", "Normal Range");
+                }else if ((points >= 50) && (points <= 59)) {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "Легкое депрессивное расстройство");
+                    else
+                        intent.putExtra("result", "Mildly Depressed");
+                }else if ((points >= 60) && (points <= 69)) {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "Депрессивное расстройство средней степени тяжести");
+                    else
+                        intent.putExtra("result", "Moderately Depressed");
+                }else {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+                        intent.putExtra("result", "Депрессивное расстройство  тяжелой степени тяжести");
+                    else
+                        intent.putExtra("result", "Severely Depressed");
+                }
                 startActivity(intent);
                 finish();
             }
         });
 
-        button_C.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                points = questionItem4s.get(currentQuestion).getScoreC() + points;
+        button_C.setOnClickListener(view -> {
+            points = questionItem4s.get(currentQuestion).getScoreC() + points;
 
-                //load next question if any
-                if (currentQuestion < questionItem4s.size()-1){
-                    currentQuestion++;
-                    setQuestionScreen(currentQuestion);
-                } else {
-                    Intent intent = new Intent(getApplicationContext(), EndActivity.class);
+            //load next question if any
+            if (currentQuestion < questionItem4s.size()-1){
+                currentQuestion++;
+                setQuestionScreen(currentQuestion);
+            } else {
+                Intent intent = new Intent(getApplicationContext(), EndActivity.class);
 
-                    if ((points >= 20) && (points <= 49))
+                if ((points >= 20) && (points <= 49)) {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
                         intent.putExtra("result", "Нормальное состояние");
                     else
-                    if ((points >= 50) && (points <= 59))
+                        intent.putExtra("result", "Normal Range");
+                }else if ((points >= 50) && (points <= 59)) {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
                         intent.putExtra("result", "Легкое депрессивное расстройство");
                     else
-                    if ((points >= 60) && (points <= 69))
+                        intent.putExtra("result", "Mildly Depressed");
+                }else if ((points >= 60) && (points <= 69)) {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
                         intent.putExtra("result", "Депрессивное расстройство средней степени тяжести");
                     else
+                        intent.putExtra("result", "Moderately Depressed");
+                }else {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
                         intent.putExtra("result", "Депрессивное расстройство  тяжелой степени тяжести");
-
-                    startActivity(intent);
-                    finish();
+                    else
+                        intent.putExtra("result", "Severely Depressed");
                 }
+                startActivity(intent);
+                finish();
             }
         });
 
-        button_D.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                points = questionItem4s.get(currentQuestion).getScoreD() + points;
+        button_D.setOnClickListener(view -> {
+            points = questionItem4s.get(currentQuestion).getScoreD() + points;
 
-                //load next question if any
-                if (currentQuestion < questionItem4s.size()-1){
-                    currentQuestion++;
-                    setQuestionScreen(currentQuestion);
-                } else {
-                    Intent intent = new Intent(getApplicationContext(), EndActivity.class);
-                    if ((points >= 20) && (points <= 49))
+            //load next question if any
+            if (currentQuestion < questionItem4s.size()-1){
+                currentQuestion++;
+                setQuestionScreen(currentQuestion);
+            } else {
+                Intent intent = new Intent(getApplicationContext(), EndActivity.class);
+                if ((points >= 20) && (points <= 49)) {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
                         intent.putExtra("result", "Нормальное состояние");
                     else
-                    if ((points >= 50) && (points <= 59))
+                        intent.putExtra("result", "Normal Range");
+                }else if ((points >= 50) && (points <= 59)) {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
                         intent.putExtra("result", "Легкое депрессивное расстройство");
                     else
-                    if ((points >= 60) && (points <= 69))
+                        intent.putExtra("result", "Mildly Depressed");
+                }else if ((points >= 60) && (points <= 69)) {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
                         intent.putExtra("result", "Депрессивное расстройство средней степени тяжести");
                     else
+                        intent.putExtra("result", "Moderately Depressed");
+                }else {
+                    if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
                         intent.putExtra("result", "Депрессивное расстройство  тяжелой степени тяжести");
-                    startActivity(intent);
-                    finish();
+                    else
+                        intent.putExtra("result", "Severely Depressed");
                 }
+                startActivity(intent);
+                finish();
             }
         });
     }
@@ -167,9 +210,13 @@ public class ZungActivity extends AppCompatActivity {
 
     private void loadAllQuestions(){
         questionItem4s = new ArrayList<>();
+        String jsonStr;
 
         //load all questions into json string
-        String jsonStr = loadJSONFromAssert("zung_test.json");
+        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
+            jsonStr = loadJSONFromAssert("ru/zung_test.json");
+        else
+            jsonStr = loadJSONFromAssert("en/zung_test_en");
 
         //load all data into list
         try{

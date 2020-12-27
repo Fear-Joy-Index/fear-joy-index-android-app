@@ -65,9 +65,7 @@ public class QuestionItem6 {
         return scoreE;
     }
 
-    public String getAnswF() {
-        return answF;
-    }
+    public String getAnswF() { return answF; }
 
     public Integer getScoreF() {
         return scoreF;
