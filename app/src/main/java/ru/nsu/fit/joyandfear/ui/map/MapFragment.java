@@ -6,11 +6,17 @@ import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.lifecycle.ViewModelProviders;
 
 import android.Manifest;
+import android.content.ContentResolver;
+import android.content.ContentValues;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.database.Cursor;
 import android.graphics.Color;
 import android.location.Location;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -35,7 +41,11 @@ import org.json.JSONObject;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+
 import ru.nsu.fit.joyandfear.R;
+import ru.nsu.fit.joyandfear.data.DataProvider;
 import ru.nsu.fit.joyandfear.databinding.FragmentMapBinding;
 
 
@@ -43,6 +53,7 @@ import ru.nsu.fit.joyandfear.databinding.FragmentMapBinding;
 public class MapFragment extends Fragment{
     private static final int REQUEST_CODE = 101;
     private GoogleMap mMap;
+
     private Location currentLocation;
     private FusedLocationProviderClient fusedLocationProviderClient;
 
@@ -51,70 +62,33 @@ public class MapFragment extends Fragment{
 
     private OnMapReadyCallback callback = googleMap -> {
         mMap = googleMap;
-        try {
-            final StringBuilder stringBuilder = new StringBuilder();
-            final InputStreamReader streamReader = new InputStreamReader(getResources().openRawResource(R.raw.map));  //временное чтение из файла TODO: вынести получение в async task
-            final BufferedReader bufferedReader = new BufferedReader(streamReader);
+        //initData();
 
-            String line;
-            while ((line = bufferedReader.readLine()) != null) {
-                stringBuilder.append(line);
-                stringBuilder.append('\n');
-            }
-            final JSONObject mapJson = new JSONObject(stringBuilder.toString());
-            JSONArray map = mapJson.getJSONArray("map");
-            for (int i = 0; i < map.length(); i++) {
-                PolygonOptions polygonOptions = new PolygonOptions();
-                JSONArray coords = map.getJSONObject(i).getJSONArray("coordinates");
-                for (int j = 0; j < coords.length(); j++) {
-                    String[] latlong =  coords.getString(j).split(",");
-                    double latitude = Double.parseDouble(latlong[0]);
-                    double longitude = Double.parseDouble(latlong[1]);
-                    LatLng location = new LatLng(latitude, longitude);
-                    polygonOptions.add(location);
-                }
-                Double score = map.getJSONObject(i).getDouble("score");
-                int[] polColor = new int[3];
-                switch (score.intValue()){
-                    case 0:
-                        polColor[0]=255;
-                        polColor[1]=0;
-                        break;
-                    case 1:
-                        polColor[0]=255;
-                        polColor[1]=125;
-                        break;
-                    case 2:
-                        polColor[0]=255;
-                        polColor[1]=255;
-                        break;
-                    case 3:
-                        polColor[0]=160;
-                        polColor[1]=255;
-                        break;
-                    case 4:
-                    case 5:
-                        polColor[0]=0;
-                        polColor[1]=255;
-                }
-                Polygon polygon = mMap.addPolygon(polygonOptions
-                        .strokeColor(Color.BLACK)
-                        .fillColor(Color.argb(100, polColor[0], polColor[1], 0))
-                        .strokeWidth(5));
 
+        mapViewModel.getAreas().observe(getViewLifecycleOwner(), new Observer<List<Area>>() {
+            @Override
+            public void onChanged(@Nullable List<Area> areas) {
+                drawAreas(areas);
             }
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+        });
 
         LatLng latLng = new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude());
+        SharedPreferences settings = getContext().getSharedPreferences("PREFS", 0);
+        int emotion = settings.getInt("emotion", 5);
+        ContentValues newValues = new ContentValues();
+        newValues.put("mark", emotion);
+        newValues.put("lat", latLng.latitude);
+        newValues.put("lng", latLng.longitude);
+        getContext().getContentResolver().insert(Uri.parse("content://ru.nsu.fit.joyandfear.data.provider/mark"),newValues);
+
         MarkerOptions markerOptions = new MarkerOptions().position(latLng).title("You are here!");
         googleMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
         googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 3));
         googleMap.addMarker(markerOptions);
     };
+
+
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -142,14 +116,53 @@ public class MapFragment extends Fragment{
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container,
                              Bundle savedInstanceState) {
-        mapViewModel =
-                new ViewModelProvider(this).get(MapViewModel.class);
+
+        MapViewModelFactory factory = new MapViewModelFactory(this.getContext());
+        mapViewModel = new ViewModelProvider(this, factory).get(MapViewModel.class);
+
 
         binding = FragmentMapBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this.requireActivity());
         fetchLastLocation();
         return root;
+    }
+
+    private void drawAreas(List<Area> areas){
+        for(Area a: areas) {
+            PolygonOptions polygonOptions = new PolygonOptions();
+            for (LatLng location: a.coords) {
+                polygonOptions.add(location);
+            }
+            Double score = a.score;
+            int[] polColor = new int[3];
+            switch (score.intValue()) {
+                case 0:
+                    polColor[0] = 255;
+                    polColor[1] = 0;
+                    break;
+                case 1:
+                    polColor[0] = 255;
+                    polColor[1] = 125;
+                    break;
+                case 2:
+                    polColor[0] = 255;
+                    polColor[1] = 255;
+                    break;
+                case 3:
+                    polColor[0] = 160;
+                    polColor[1] = 255;
+                    break;
+                case 4:
+                case 5:
+                    polColor[0] = 0;
+                    polColor[1] = 255;
+            }
+            Polygon polygon = mMap.addPolygon(polygonOptions
+                    .strokeColor(Color.BLACK)
+                    .fillColor(Color.argb(100, polColor[0], polColor[1], 0))
+                    .strokeWidth(2));
+        }
     }
 
     @Override

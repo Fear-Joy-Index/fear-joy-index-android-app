@@ -1,7 +1,11 @@
 package ru.nsu.fit.joyandfear;
 
 import android.app.AppComponentFactory;
+import android.content.ContentResolver;
+import android.content.ContentValues;
 import android.content.SharedPreferences;
+import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
 import android.widget.GridView;
 import android.content.Intent;
@@ -21,6 +25,7 @@ import java.util.Calendar;
 
 import ru.nsu.fit.joyandfear.MainActivity;
 import ru.nsu.fit.joyandfear.R;
+import ru.nsu.fit.joyandfear.data.DataProvider;
 
 public class EmotionActivity extends AppCompatActivity {
     private ImageView e1, e2, e3, e4, e5;
@@ -54,7 +59,7 @@ public class EmotionActivity extends AppCompatActivity {
         e1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    //отправить инфу в базу
+                    sendEmotion(1);
                     Toast.makeText(getApplicationContext(), "Oh, poor baby!", Toast.LENGTH_SHORT).show();
                     openActivity();
                 }
@@ -63,7 +68,7 @@ public class EmotionActivity extends AppCompatActivity {
         e2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //отправить инфу в базу
+                sendEmotion(2);
                 openActivity();
             }
         });
@@ -71,7 +76,7 @@ public class EmotionActivity extends AppCompatActivity {
         e3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //отправить инфу в базу
+                sendEmotion(3);
                 openActivity();
             }
         });
@@ -79,7 +84,7 @@ public class EmotionActivity extends AppCompatActivity {
         e4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //отправить инфу в базу
+                sendEmotion(4);
                 openActivity();
             }
         });
@@ -87,10 +92,17 @@ public class EmotionActivity extends AppCompatActivity {
         e5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //отправить инфу в базу
+                sendEmotion(5);
                 openActivity();
             }
         });
+        }
+
+        private void sendEmotion(int emotion){
+            SharedPreferences settings = getSharedPreferences("PREFS", 0);
+            SharedPreferences.Editor editor = settings.edit();
+            editor.putInt("emotion", emotion);
+            editor.commit();
         }
 
 
