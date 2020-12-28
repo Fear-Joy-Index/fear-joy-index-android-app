@@ -27,15 +27,21 @@ public class StartActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_start);
+        Intent intent = getIntent();
+        String name_str = intent.getStringExtra("name");
+        String text_str = intent.getStringExtra("text");
+
+        if (name_str.equals("Методика измерения уровня тревожности Тейлора") || name_str.equals("Taylor's anxiety measurement technique") || (name_str.equals("Шкала самооценки тревоги Шихана") || name_str.equals("Sheehan Patient-Rated Anxiety Scale, SPRAS")) || (name_str.equals("Тест на уровень эмпатийности Юсупова") || name_str.equals("Empathy test")))
+            setContentView(R.layout.activity_start_small);
+        else
+            setContentView(R.layout.activity_start);
 
         test_name = findViewById(R.id.text_start_name);
         test_text = findViewById(R.id.text_start);
         bt = findViewById(R.id.button);
-        Intent intent = getIntent();
 
-        String name_str = intent.getStringExtra("name");
-        String text_str = intent.getStringExtra("text");
+
+
         test_name.setText(name_str);
         test_text.setText(text_str);
 
