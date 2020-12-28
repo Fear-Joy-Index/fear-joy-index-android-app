@@ -21,6 +21,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
@@ -144,7 +145,7 @@ public class MapFragment extends Fragment{
                 polygonOptions.add(location);
             }
             Double score = a.score;
-            int[] polColor = new int[3];
+            /*int[] polColor = new int[3];
             switch (score.intValue()) {
                 case 0:
                     polColor[0] = 255;
@@ -166,11 +167,22 @@ public class MapFragment extends Fragment{
                 case 5:
                     polColor[0] = 0;
                     polColor[1] = 255;
-            }
+            }*/
+
+            float[] color = {(float) (a.score*24), 100,100};
             Polygon polygon = mMap.addPolygon(polygonOptions
                     .strokeColor(Color.BLACK)
-                    .fillColor(Color.argb(100, polColor[0], polColor[1], 0))
+                    .fillColor(Color.HSVToColor(60, color))
                     .strokeWidth(2));
+            polygon.setTag(a.score);
+            polygon.setClickable(true);
+            mMap.setOnPolygonClickListener(new GoogleMap.OnPolygonClickListener() {
+                @Override
+                public void onPolygonClick(Polygon polygon) {
+                    String tag = String.valueOf(polygon.getTag());
+                    Toast.makeText(getContext().getApplicationContext(), tag, Toast.LENGTH_SHORT).show();
+                }
+            });
         }
     }
 
