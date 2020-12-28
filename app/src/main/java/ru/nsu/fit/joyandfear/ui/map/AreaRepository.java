@@ -93,8 +93,8 @@ public class AreaRepository {
                         /*String[] latlong = coords.getString(j).split(",");
                         double latitude = Double.parseDouble(latlong[0]);
                         double longitude = Double.parseDouble(latlong[1]);*/
-                        double latitude = coords.getJSONArray(j).getDouble(1);
-                        double longitude = coords.getJSONArray(j).getDouble(0);
+                        double latitude = coords.getJSONObject(j).getDouble("y");
+                        double longitude = coords.getJSONObject(j).getDouble("x");
                         LatLng location = new LatLng(latitude, longitude);
                         area.coords.add(location);
                     }

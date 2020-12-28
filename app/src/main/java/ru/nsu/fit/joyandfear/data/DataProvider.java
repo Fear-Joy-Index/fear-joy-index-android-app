@@ -50,6 +50,7 @@ public class DataProvider extends ContentProvider {
     private static final String DBNAME = "db";
 
 
+    private static final String serverUrl = "http://server/";
 
     @Override
     public boolean onCreate() {
@@ -78,7 +79,7 @@ public class DataProvider extends ContentProvider {
     }
 
     private void requestAreas(){
-        String url = "http://server/getMarks";
+        String url = serverUrl + "getMarks";
 
         JsonArrayRequest areasRequest = new JsonArrayRequest
                 (Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
@@ -111,10 +112,10 @@ public class DataProvider extends ContentProvider {
     }
 
     private void sendMark(int mark, LatLng location, Timestamp timestamp){
-        String url = "http://server/saveMark";
+        String url = serverUrl + "saveMark";
 
         try {
-            JSONObject body = new JSONObject().put("mark", mark).put("timestamp", timestamp.toString()).put("coords", new JSONArray().put(location.longitude).put(location.latitude));
+            JSONObject body = new JSONObject().put("mark", mark).put("timestamp", timestamp.toString()).put("coords", new JSONObject().put("x",location.longitude).put("y",location.latitude));
 
         JsonObjectRequest markRequest = new JsonObjectRequest
                 (Request.Method.POST, url, body, new Response.Listener<JSONObject>() {
