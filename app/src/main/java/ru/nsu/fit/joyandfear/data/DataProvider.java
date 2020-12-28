@@ -5,6 +5,7 @@ import android.content.ContentValues;
 import android.content.UriMatcher;
 import android.database.Cursor;
 import android.net.Uri;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -115,7 +116,7 @@ public class DataProvider extends ContentProvider {
         try {
             JSONObject body = new JSONObject().put("mark", mark).put("timestamp", timestamp.toString()).put("coords", new JSONArray().put(location.longitude).put(location.latitude));
 
-        JsonObjectRequest areasRequest = new JsonObjectRequest
+        JsonObjectRequest markRequest = new JsonObjectRequest
                 (Request.Method.POST, url, body, new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
@@ -130,7 +131,9 @@ public class DataProvider extends ContentProvider {
                     }
                 });
 
-        requestQueue.add(areasRequest);
+        requestQueue.add(markRequest);
+        Log.i("data provider", "request to server:"+ url + "\n  body looks like:" + body.toString());
+
         } catch (JSONException e) {
             e.printStackTrace();
         }
