@@ -90,9 +90,11 @@ public class AreaRepository {
                     Area area = new Area();
                     JSONArray coords = new JSONArray(cursor.getString(cursor.getColumnIndex("polygon")));
                     for (int j = 0; j < coords.length(); j++) {
-                        String[] latlong = coords.getString(j).split(",");
+                        /*String[] latlong = coords.getString(j).split(",");
                         double latitude = Double.parseDouble(latlong[0]);
-                        double longitude = Double.parseDouble(latlong[1]);
+                        double longitude = Double.parseDouble(latlong[1]);*/
+                        double latitude = coords.getJSONArray(j).getDouble(1);
+                        double longitude = coords.getJSONArray(j).getDouble(0);
                         LatLng location = new LatLng(latitude, longitude);
                         area.coords.add(location);
                     }
