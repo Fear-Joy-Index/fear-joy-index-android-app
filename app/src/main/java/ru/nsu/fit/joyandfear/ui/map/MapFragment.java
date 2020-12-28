@@ -74,18 +74,26 @@ public class MapFragment extends Fragment{
 
         LatLng latLng = new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude());
         SharedPreferences settings = getContext().getSharedPreferences("PREFS", 0);
-        int emotion = settings.getInt("emotion", 5);
-        ContentValues newValues = new ContentValues();
-        newValues.put("mark", emotion);
-        newValues.put("lat", latLng.latitude);
-        newValues.put("lng", latLng.longitude);
-        getContext().getContentResolver().insert(Uri.parse("content://ru.nsu.fit.joyandfear.data.provider/mark"),newValues);
+        int emotion = settings.getInt("emotion", -1);
+
+        if (emotion != -1 && latLng != null){
+            sendMark(emotion, latLng);
+            settings.edit().putInt("emotion", -1).apply();
+        }
 
         MarkerOptions markerOptions = new MarkerOptions().position(latLng).title("You are here!");
         googleMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
         googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 3));
         googleMap.addMarker(markerOptions);
     };
+
+    private void sendMark(int emotion, LatLng latLng){
+        ContentValues newValues = new ContentValues();
+        newValues.put("mark", emotion);
+        newValues.put("lat", latLng.latitude);
+        newValues.put("lng", latLng.longitude);
+        getContext().getContentResolver().insert(Uri.parse("content://ru.nsu.fit.joyandfear.data.provider/mark"),newValues);
+    }
 
 
 
@@ -105,12 +113,13 @@ public class MapFragment extends Fragment{
         task.addOnSuccessListener(location -> {
             if (location != null){
                 currentLocation = location;
+                SupportMapFragment mapFragment =
+                        (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map);
+                if (mapFragment != null) {
+                    mapFragment.getMapAsync(callback);
+                }
             }
-            SupportMapFragment mapFragment =
-                    (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map);
-            if (mapFragment != null) {
-                mapFragment.getMapAsync(callback);
-            }
+
         });
     }
     public View onCreateView(@NonNull LayoutInflater inflater,
