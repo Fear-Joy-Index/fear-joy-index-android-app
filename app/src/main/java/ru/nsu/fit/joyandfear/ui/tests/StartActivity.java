@@ -31,7 +31,7 @@ public class StartActivity extends AppCompatActivity {
         String name_str = intent.getStringExtra("name");
         String text_str = intent.getStringExtra("text");
 
-        if (name_str.equals("Методика измерения уровня тревожности Тейлора") || name_str.equals("Taylor's anxiety measurement technique") || (name_str.equals("Шкала самооценки тревоги Шихана") || name_str.equals("Sheehan Patient-Rated Anxiety Scale, SPRAS")) || (name_str.equals("Тест на уровень эмпатийности Юсупова") || name_str.equals("Empathy test")))
+        if (name_str.equals("Taylor's anxiety measurement technique") || (name_str.equals("Шкала самооценки тревоги Шихана") || name_str.equals("Sheehan Patient-Rated Anxiety Scale, SPRAS")) || (name_str.equals("Тест на уровень эмпатийности Юсупова") || name_str.equals("Empathy test")))
             setContentView(R.layout.activity_start_small);
         else
             setContentView(R.layout.activity_start);
