@@ -26,18 +26,24 @@ public class EndActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_end);
+        Intent intent = getIntent();
+        String result_str = intent.getStringExtra("result");
+        String small = intent.getStringExtra("small");
+
+        assert small != null;
+        if (small.equals("1"))
+            setContentView(R.layout.activity_end_small);
+        else
+            setContentView(R.layout.activity_end);
 
         result = findViewById(R.id.text_end);
         bt = findViewById(R.id.button_to_test);
-        Intent intent = getIntent();
 
-        String result_str = intent.getStringExtra("result");
         result.setText(result_str);
 
         bt.setOnClickListener(view -> {
-            Intent intent1 = new Intent(EndActivity.this, MainActivity.class);
-            startActivity(intent1);
+            Intent intent2 = new Intent(EndActivity.this, MainActivity.class);
+            startActivity(intent2);
             //FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             //fragmentTransaction.replace(R.id.testsContainer, new TestsFragment());
         });

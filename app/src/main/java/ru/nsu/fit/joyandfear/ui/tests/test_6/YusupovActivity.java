@@ -17,6 +17,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import java.util.Objects;
 
 import ru.nsu.fit.joyandfear.R;
 import ru.nsu.fit.joyandfear.ui.tests.EndActivity;
@@ -31,17 +32,18 @@ public class YusupovActivity extends AppCompatActivity {
     List<QuestionItem6> questionItem6s;
     int currentQuestion = 0;
     int points = 0;
+    String small = "0";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+        Intent intent1 = getIntent();
+        String name_test = intent1.getStringExtra("name_test");
+
         setContentView(R.layout.activity_test_6);
 
-        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
-            getSupportActionBar().setTitle("Тест на уровень эмпатийности Юсупова");
-        if (getResources().getConfiguration().locale.getLanguage().equals("en"))
-            getSupportActionBar().setTitle("Empathy test");
+        Objects.requireNonNull(getSupportActionBar()).setTitle(name_test);
 
         question = findViewById(R.id.question_view);
         button_A = findViewById(R.id.button_A);
@@ -95,7 +97,7 @@ public class YusupovActivity extends AppCompatActivity {
                     else
                         intent.putExtra("result", "Very low level. The empathic tendencies of the individual are undeveloped. If you find it difficult to start a conversation first, keep to yourself among your colleagues. Especially difficult are contacts with children and people who are much older than you. In interpersonal relationships, you often find yourself in an awkward position. In many ways, you do not find mutual understanding with others. You like thrills, you prefer sports to art. They are too self-centered in their activities. You can be very productive in individual work, but when you interact with others, you don't always look in the best light. Painfully transfer criticism to your address, although you can not react violently to it. It is necessary to exercise the senses.");
                 }
-
+                intent.putExtra("small", small);
                 startActivity(intent);
                 finish();
             }
@@ -139,6 +141,7 @@ public class YusupovActivity extends AppCompatActivity {
                     else
                         intent.putExtra("result", "Very low level. The empathic tendencies of the individual are undeveloped. If you find it difficult to start a conversation first, keep to yourself among your colleagues. Especially difficult are contacts with children and people who are much older than you. In interpersonal relationships, you often find yourself in an awkward position. In many ways, you do not find mutual understanding with others. You like thrills, you prefer sports to art. They are too self-centered in their activities. You can be very productive in individual work, but when you interact with others, you don't always look in the best light. Painfully transfer criticism to your address, although you can not react violently to it. It is necessary to exercise the senses.");
                 }
+                intent.putExtra("small", small);
                 startActivity(intent);
                 finish();
             }
@@ -185,7 +188,7 @@ public class YusupovActivity extends AppCompatActivity {
                         else
                             intent.putExtra("result", "Very low level. The empathic tendencies of the individual are undeveloped. If you find it difficult to start a conversation first, keep to yourself among your colleagues. Especially difficult are contacts with children and people who are much older than you. In interpersonal relationships, you often find yourself in an awkward position. In many ways, you do not find mutual understanding with others. You like thrills, you prefer sports to art. They are too self-centered in their activities. You can be very productive in individual work, but when you interact with others, you don't always look in the best light. Painfully transfer criticism to your address, although you can not react violently to it. It is necessary to exercise the senses.");
                     }
-
+                    intent.putExtra("small", small);
                     startActivity(intent);
                     finish();
                 }
@@ -232,6 +235,7 @@ public class YusupovActivity extends AppCompatActivity {
                         else
                             intent.putExtra("result", "Very low level. The empathic tendencies of the individual are undeveloped. If you find it difficult to start a conversation first, keep to yourself among your colleagues. Especially difficult are contacts with children and people who are much older than you. In interpersonal relationships, you often find yourself in an awkward position. In many ways, you do not find mutual understanding with others. You like thrills, you prefer sports to art. They are too self-centered in their activities. You can be very productive in individual work, but when you interact with others, you don't always look in the best light. Painfully transfer criticism to your address, although you can not react violently to it. It is necessary to exercise the senses.");
                     }
+                    intent.putExtra("small", small);
                     startActivity(intent);
                     finish();
                 }
@@ -278,6 +282,7 @@ public class YusupovActivity extends AppCompatActivity {
                         else
                             intent.putExtra("result", "Very low level. The empathic tendencies of the individual are undeveloped. If you find it difficult to start a conversation first, keep to yourself among your colleagues. Especially difficult are contacts with children and people who are much older than you. In interpersonal relationships, you often find yourself in an awkward position. In many ways, you do not find mutual understanding with others. You like thrills, you prefer sports to art. They are too self-centered in their activities. You can be very productive in individual work, but when you interact with others, you don't always look in the best light. Painfully transfer criticism to your address, although you can not react violently to it. It is necessary to exercise the senses.");
                     }
+                    intent.putExtra("small", small);
                     startActivity(intent);
                     finish();
                 }
@@ -324,6 +329,7 @@ public class YusupovActivity extends AppCompatActivity {
                         else
                             intent.putExtra("result", "Very low level. The empathic tendencies of the individual are undeveloped. If you find it difficult to start a conversation first, keep to yourself among your colleagues. Especially difficult are contacts with children and people who are much older than you. In interpersonal relationships, you often find yourself in an awkward position. In many ways, you do not find mutual understanding with others. You like thrills, you prefer sports to art. They are too self-centered in their activities. You can be very productive in individual work, but when you interact with others, you don't always look in the best light. Painfully transfer criticism to your address, although you can not react violently to it. It is necessary to exercise the senses.");
                     }
+                    intent.putExtra("small", small);
                     startActivity(intent);
                     finish();
                 }

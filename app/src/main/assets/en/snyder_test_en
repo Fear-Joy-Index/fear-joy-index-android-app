@@ -54,7 +54,7 @@
         "score": 1
       },
       "B": {
-        "answer": "Не",
+        "answer": "False",
         "score": 0
       }
     },
@@ -76,11 +76,11 @@
       "question": "In different situations and in dealing with different people, I often behave quite differently",
       "class": "",
       "A": {
-        "answer": "Редко",
+        "answer": "True",
         "score": 1
       },
       "B": {
-        "answer": "Иногда",
+        "answer": "False",
         "score": 0
       }
     },
@@ -118,7 +118,7 @@
         "score": 1
       },
       "B": {
-        "answer": "Не",
+        "answer": "False",
         "score": 0
       }
     },
@@ -131,7 +131,7 @@
         "score": 0
       },
       "B": {
-        "answer": "Не",
+        "answer": "False",
         "score": 1
       }
     }

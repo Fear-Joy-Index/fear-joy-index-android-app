@@ -6,21 +6,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
 
-import java.util.Locale;
-
-import ru.nsu.fit.joyandfear.EmotionActivity;
-import ru.nsu.fit.joyandfear.MainActivity;
 import ru.nsu.fit.joyandfear.R;
-import ru.nsu.fit.joyandfear.databinding.FragmentTestsBinding;
-import ru.nsu.fit.joyandfear.ui.settings.SettingsFragment;
 
 public class TestsFragment extends Fragment {
     private Button bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8;
