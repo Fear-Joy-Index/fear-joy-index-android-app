@@ -18,6 +18,7 @@ import android.graphics.Color;
 import android.location.Location;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -145,29 +146,6 @@ public class MapFragment extends Fragment{
                 polygonOptions.add(location);
             }
             Double score = a.score;
-            /*int[] polColor = new int[3];
-            switch (score.intValue()) {
-                case 0:
-                    polColor[0] = 255;
-                    polColor[1] = 0;
-                    break;
-                case 1:
-                    polColor[0] = 255;
-                    polColor[1] = 125;
-                    break;
-                case 2:
-                    polColor[0] = 255;
-                    polColor[1] = 255;
-                    break;
-                case 3:
-                    polColor[0] = 160;
-                    polColor[1] = 255;
-                    break;
-                case 4:
-                case 5:
-                    polColor[0] = 0;
-                    polColor[1] = 255;
-            }*/
 
             float[] color = {(float) (a.score*24), 100,100};
             Polygon polygon = mMap.addPolygon(polygonOptions

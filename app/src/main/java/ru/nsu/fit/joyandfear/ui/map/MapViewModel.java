@@ -14,7 +14,7 @@ public class MapViewModel extends ViewModel {
 
     private AreaRepository repository;
     private MutableLiveData<List<Area>> areas;
-    private ExecutorService esvc = Executors.newFixedThreadPool(3);
+    private ExecutorService esvc = Executors.newFixedThreadPool(4);
 
 
     public MapViewModel(Context context) {

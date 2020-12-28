@@ -58,8 +58,7 @@ public class AreaRepository {
                 stringBuilder.append(line);
                 stringBuilder.append('\n');
             }
-            final JSONObject mapJson = new JSONObject(stringBuilder.toString());
-            JSONArray map = mapJson.getJSONArray("map");
+            final JSONArray map = new JSONArray(stringBuilder.toString());
             for (int i = 0; i < map.length(); i++) {
                 ContentValues newValues = new ContentValues();
                 newValues.put(DataProvider.Names.Area.polygon, map.getJSONObject(i).getJSONArray("coordinates").toString());

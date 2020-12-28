@@ -50,7 +50,7 @@ public class DataProvider extends ContentProvider {
     private static final String DBNAME = "db";
 
 
-    private static final String serverUrl = "http://server/";
+    private static final String serverUrl = "http://localhost:8080/";
 
     @Override
     public boolean onCreate() {
@@ -180,7 +180,7 @@ public class DataProvider extends ContentProvider {
                 }
                 break;
             case 3:
-                sendMark(values.getAsInteger("mark"), new LatLng(values.getAsDouble("lat"), values.getAsDouble("lng")), new java.sql.Timestamp(System.currentTimeMillis()/1000));
+                sendMark(values.getAsInteger("mark"), new LatLng(values.getAsDouble("lat"), values.getAsDouble("lng")), new java.sql.Timestamp(System.currentTimeMillis()));
                 return uri;
             default:
                 throw new IllegalArgumentException
