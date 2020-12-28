@@ -16,6 +16,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import java.util.Objects;
 
 import ru.nsu.fit.joyandfear.R;
 import ru.nsu.fit.joyandfear.ui.tests.EndActivity;
@@ -30,17 +31,18 @@ public class SnyderActivity extends AppCompatActivity {
     List<QuestionItem2> questionItem2s;
     int currentQuestion = 0;
     int points = 0;
+    String small = "1";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+        Intent intent1 = getIntent();
+        String name_test = intent1.getStringExtra("name_test");
+
         setContentView(R.layout.activity_test_2);
 
-        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
-            getSupportActionBar().setTitle("Тест на оценку самоконтроля в общении (М. Снайдер)");
-        if (getResources().getConfiguration().locale.getLanguage().equals("en"))
-            getSupportActionBar().setTitle("Assessment of self-control in communication (M. Snyder)");
+        Objects.requireNonNull(getSupportActionBar()).setTitle(name_test);
 
         question = findViewById(R.id.question_view);
         button_A = findViewById(R.id.button_A);
@@ -77,7 +79,7 @@ public class SnyderActivity extends AppCompatActivity {
                     else
                         intent.putExtra("result", "You have high communication control. You easily enter any role, flexibly react to the change in the situation, feel well and even be able to foresee the impression that you make on others.");
                 }
-
+                intent.putExtra("small", small);
                 startActivity(intent);
                 finish();
             }
@@ -108,7 +110,7 @@ public class SnyderActivity extends AppCompatActivity {
                     else
                         intent.putExtra("result", "You have high communication control. You easily enter any role, flexibly react to the change in the situation, feel well and even be able to foresee the impression that you make on others.");
                 }
-
+                intent.putExtra("small", small);
                 startActivity(intent);
                 finish();
             }

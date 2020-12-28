@@ -17,6 +17,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import java.util.Objects;
 
 import ru.nsu.fit.joyandfear.R;
 import ru.nsu.fit.joyandfear.ui.tests.EndActivity;
@@ -31,17 +32,18 @@ public class RyakhovskyActivity extends AppCompatActivity {
     List<QuestionItem3> questionItem3s;
     int currentQuestion = 0;
     int points = 0;
+    String small = "0";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+        Intent intent1 = getIntent();
+        String name_test = intent1.getStringExtra("name_test");
+
         setContentView(R.layout.activity_test_3);
 
-        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
-            getSupportActionBar().setTitle("Тест на уровень общительности Ряховского");
-        if (getResources().getConfiguration().locale.getLanguage().equals("en"))
-            getSupportActionBar().setTitle("Ryakhovsky test");
+        Objects.requireNonNull(getSupportActionBar()).setTitle(name_test);
 
         question = findViewById(R.id.question_view);
         button_A = findViewById(R.id.button_A);
@@ -104,6 +106,7 @@ public class RyakhovskyActivity extends AppCompatActivity {
                     else
                         intent.putExtra("result", "Your communication skills are painful.ter. You are talkative, verbose, intervene in matters that you do not have they have nothing to do with you. You take to judge the problems in which completely incompetent. Whether you want to or not, you often come across the rank of all sorts of conflicts in your environment. Hot-tempered, resent mentare often biased. Serious work is not for you. Liudyam - and at work, and at home, and in general everywhere - it is difficult with you. Yes, you need to work on yourself and your character! First of all, raised have patience and restraint, respect people, finally, think about your health - this lifestyle is not passes without a trace.");
                 }
+                intent.putExtra("small", small);
                 startActivity(intent);
                 finish();
             }
@@ -159,6 +162,7 @@ public class RyakhovskyActivity extends AppCompatActivity {
                     else
                         intent.putExtra("result", "Your communication skills are painful.ter. You are talkative, verbose, intervene in matters that you do not have they have nothing to do with you. You take to judge the problems in which completely incompetent. Whether you want to or not, you often come across the rank of all sorts of conflicts in your environment. Hot-tempered, resent mentare often biased. Serious work is not for you. Liudyam - and at work, and at home, and in general everywhere - it is difficult with you. Yes, you need to work on yourself and your character! First of all, raised have patience and restraint, respect people, finally, think about your health - this lifestyle is not passes without a trace.");
                 }
+                intent.putExtra("small", small);
                 startActivity(intent);
                 finish();
             }
@@ -217,7 +221,7 @@ public class RyakhovskyActivity extends AppCompatActivity {
                         else
                             intent.putExtra("result", "Your communication skills are painful.ter. You are talkative, verbose, intervene in matters that you do not have they have nothing to do with you. You take to judge the problems in which completely incompetent. Whether you want to or not, you often come across the rank of all sorts of conflicts in your environment. Hot-tempered, resent mentare often biased. Serious work is not for you. Liudyam - and at work, and at home, and in general everywhere - it is difficult with you. Yes, you need to work on yourself and your character! First of all, raised have patience and restraint, respect people, finally, think about your health - this lifestyle is not passes without a trace.");
                     }
-
+                    intent.putExtra("small", small);
                     startActivity(intent);
                     finish();
                 }

@@ -15,6 +15,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 import ru.nsu.fit.joyandfear.R;
 import ru.nsu.fit.joyandfear.ui.tests.EndActivity;
@@ -29,17 +30,18 @@ public class TaylorActivity extends AppCompatActivity {
     List<QuestionItem2> questionItem2s;
     int currentQuestion = 0;
     int points = 0;
+    String small = "1";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+        Intent intent1 = getIntent();
+        String name_test = intent1.getStringExtra("name_test");
+
         setContentView(R.layout.activity_test_2);
 
-        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
-            getSupportActionBar().setTitle("Методика измерения уровня тревожности Тейлора");
-        if (getResources().getConfiguration().locale.getLanguage().equals("en"))
-            getSupportActionBar().setTitle("Taylor's anxiety measurement technique");
+        Objects.requireNonNull(getSupportActionBar()).setTitle(name_test);
 
         question = findViewById(R.id.question_view);
         button_A = findViewById(R.id.button_A);
@@ -89,6 +91,8 @@ public class TaylorActivity extends AppCompatActivity {
                     else
                         intent.putExtra("result", "Very high levels of anxiety");
                 }
+
+                intent.putExtra("small", small);
                 startActivity(intent);
                 finish();
             }
@@ -117,6 +121,7 @@ public class TaylorActivity extends AppCompatActivity {
                 else
                     intent.putExtra("result", "У вас очень высокий уровень тревоги");
 
+                intent.putExtra("small", small);
                 startActivity(intent);
                 finish();
             }

@@ -8,29 +8,31 @@
 
     <TextView
         android:id="@+id/text_start_name"
-        android:layout_width="372sp"
-        android:layout_height="151sp"
+        android:layout_width="378dp"
+        android:layout_height="167dp"
         android:gravity="center"
         android:text="TextView"
         android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.063" />
+        app:layout_constraintVertical_bias="0.008" />
 
     <TextView
         android:id="@+id/text_start"
-        android:layout_width="378sp"
-        android:layout_height="373sp"
+        android:layout_width="356dp"
+        android:layout_height="390dp"
         android:gravity="center"
         android:text="TextView"
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.542" />
 
     <Button
         android:id="@+id/button"

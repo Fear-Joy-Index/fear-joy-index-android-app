@@ -17,6 +17,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import java.util.Objects;
 
 import ru.nsu.fit.joyandfear.R;
 import ru.nsu.fit.joyandfear.ui.tests.EndActivity;
@@ -31,17 +32,18 @@ public class SpilbergActivity extends AppCompatActivity {
     List<QuestionItem4> questionItem4s;
     int currentQuestion = 0;
     int points = 0;
+    String small = "1";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+        Intent intent1 = getIntent();
+        String name_test = intent1.getStringExtra("name_test");
+
         setContentView(R.layout.activity_test_4);
 
-        if (getResources().getConfiguration().locale.getLanguage().equals("ru"))
-            getSupportActionBar().setTitle("Шкала самооценки тревоги Спилбера-Ханина");
-        if (getResources().getConfiguration().locale.getLanguage().equals("en"))
-            getSupportActionBar().setTitle("The Spielberger State-Trait Anxiety Inventory (STAI)");
+        Objects.requireNonNull(getSupportActionBar()).setTitle(name_test);
 
         question = findViewById(R.id.question_view);
         button_A = findViewById(R.id.button_A);
@@ -83,7 +85,7 @@ public class SpilbergActivity extends AppCompatActivity {
                         else
                             intent.putExtra("result", "High anxiety");
                     }
-
+                    intent.putExtra("small", small);
                     startActivity(intent);
                     finish();
                 }
@@ -118,7 +120,7 @@ public class SpilbergActivity extends AppCompatActivity {
                         else
                             intent.putExtra("result", "High anxiety");
                     }
-
+                    intent.putExtra("small", small);
                     startActivity(intent);
                     finish();
                 }
@@ -154,7 +156,7 @@ public class SpilbergActivity extends AppCompatActivity {
                         else
                             intent.putExtra("result", "High anxiety");
                     }
-
+                    intent.putExtra("small", small);
                     startActivity(intent);
                     finish();
                 }
@@ -190,7 +192,7 @@ public class SpilbergActivity extends AppCompatActivity {
                         else
                             intent.putExtra("result", "High anxiety");
                     }
-
+                    intent.putExtra("small", small);
                     startActivity(intent);
                     finish();
                 }

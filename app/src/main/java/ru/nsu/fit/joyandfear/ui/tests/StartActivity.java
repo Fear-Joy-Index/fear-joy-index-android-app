@@ -48,40 +48,48 @@ public class StartActivity extends AppCompatActivity {
         bt.setOnClickListener(view -> {
             if (name_str.equals("Шкала Зунга") || name_str.equals("Zung Self-Rating Depression Scale (SDS)")){
                 Intent intent1 = new Intent(getApplicationContext(), ZungActivity.class);
+                intent1.putExtra("name_test", name_str);
                 startActivity(intent1);
             }
             else
             if (name_str.equals("Шкала самооценки тревоги Спилбера-Ханина") || name_str.equals("The Spielberger State-Trait Anxiety Inventory (STAI)")){
                 Intent intent1 = new Intent(getApplicationContext(), SpilbergActivity.class);
+                intent1.putExtra("name_test", name_str);
                 startActivity(intent1);
             }
             else
             if (name_str.equals("Шкала депрессии Бека") || name_str.equals("Beck Depression Inventory")){
                 Intent intent1 = new Intent(getApplicationContext(), BeckActivity.class);
+                intent1.putExtra("name_test", name_str);
                 startActivity(intent1);
             }
             else
             if (name_str.equals("Тест на уровень общительности Ряховского") || name_str.equals("Ryakhovsky test")){
                 Intent intent1 = new Intent(getApplicationContext(), RyakhovskyActivity.class);
+                intent1.putExtra("name_test", name_str);
                 startActivity(intent1);
             }else
             if (name_str.equals("Методика измерения уровня тревожности Тейлора") || name_str.equals("Taylor's anxiety measurement technique")){
                 Intent intent1 = new Intent(getApplicationContext(), TaylorActivity.class);
+                intent1.putExtra("name_test", name_str);
                 startActivity(intent1);
             }
             else
             if (name_str.equals("Тест на оценку самоконтроля в общении (М. Снайдер)") || name_str.equals("Assessment of self-control in communication (M. Snyder)")){
                 Intent intent1 = new Intent(getApplicationContext(), SnyderActivity.class);
+                intent1.putExtra("name_test", name_str);
                 startActivity(intent1);
             }
             else
             if (name_str.equals("Шкала самооценки тревоги Шихана") || name_str.equals("Sheehan Patient-Rated Anxiety Scale, SPRAS")){
                 Intent intent1 = new Intent(getApplicationContext(), SheehanActivity.class);
+                intent1.putExtra("name_test", name_str);
                 startActivity(intent1);
             }
             else
             if (name_str.equals("Тест на уровень эмпатийности Юсупова") || name_str.equals("Empathy test")){
                 Intent intent1 = new Intent(getApplicationContext(), YusupovActivity.class);
+                intent1.putExtra("name_test", name_str);
                 startActivity(intent1);
             }
 
